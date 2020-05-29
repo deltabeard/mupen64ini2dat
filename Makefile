@@ -1,0 +1,1 @@
+all: mupenini2dat
