@@ -67,6 +67,7 @@ struct rom_entry_s
 
 	struct {
 		char md5[33];
+		char goodname[64];
 		char *cheat;
 	} track;
 };
@@ -298,11 +299,23 @@ struct rom_entry_s *convert_entries(const char *ini,
 		}
 		else if(strncmplim(line, "GoodName") == 0)
 		{
-			/* Ignoring this key. */
+			char *endline = strchr(line, '\n');
+			size_t len;
+			line = strchr(line, '=') + 1;
+
+			len = endline - line;
+			if(len >= 64)
+				len = 64;
+
+			assert(entry->track.goodname != NULL);
+			strncpy(entry->track.goodname, line, len);
+			entry->track.goodname[len - 1] = '\0';
 		}
 		else if(*line != '\0')
 		{
-			fprintf(stderr, "Unknown key %.32s\n", line);
+			char *endline = strchr(line, '\n');
+			int len = line - endline;
+			fprintf(stderr, "Unknown key %.*s\n", len, line);
 			abort();
 		}
 	}
@@ -363,9 +376,30 @@ int compare_entry(const void *in1, const void *in2)
 	return 0;
 }
 
-void remove_dupes(struct rom_entry_s *all, size_t entries)
+void remove_dupes(struct rom_entry_s *first, size_t *entries)
 {
+	struct rom_entry_s *e = first;
+	for(; e < (first + *entries); e++)
+	{
+		struct rom_entry_s *next = e + 1;
 
+		if(e->conf.reference)
+			continue;
+
+		while(e->crc == next->crc)
+		{
+			/* Check for collision. */
+			assert(!e->conf.reference || !next->conf.reference);
+
+			if(next->conf.reference)
+			{
+				size_t rem_sz = (next - first) + *entries * sizeof(*e);
+				memmove(e, next, rem_sz);
+			}
+
+			next++;
+		}
+	}
 }
 
 int main(int argc, char *argv[])
@@ -394,7 +428,7 @@ int main(int argc, char *argv[])
 
 	all = convert_entries(ini, entries);
 	qsort(all, entries, sizeof(*all), compare_entry);
-	remove_dupes(all, entries);
+	remove_dupes(all, &entries);
 	dump_crc_header(argv[3], all, entries);
 
 	/* Read each entry. */
