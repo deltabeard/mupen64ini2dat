@@ -35,7 +35,7 @@ struct rom_entry_s
 		{
 			/* Unused value allows for packing entry in exactly 4
 			 * bytes. */
-			unsigned char unused : 1;
+			unsigned char do_not_use : 1;
 
 			unsigned char save_type : 3;
 			unsigned char players : 3;
@@ -53,7 +53,8 @@ struct rom_entry_s
 			unsigned char mempack : 1;
 			unsigned char biopak : 1;
 
-			/* Only Tetris 64 requires this. If 1, then set to 0x100. */
+			/* Only Tetris 64 requires this. If 1, then set to
+			 * 0x100, otherwise the default of 0x900 is assumed. */
 			unsigned char si_dma_duration : 1;
 		};
 		struct
@@ -67,6 +68,7 @@ struct rom_entry_s
 
 	struct {
 		char md5[33];
+		char refmd5[33];
 		char goodname[64];
 		char *cheat;
 	} track;
@@ -128,7 +130,7 @@ struct rom_entry_s *convert_entries(const char *ini,
 				    const size_t entries)
 {
 	#define strncmplim(hay, needle) strncmp(hay, needle, strlen(needle))
-	struct rom_entry_s *dat = calloc(entries, sizeof(struct rom_entry_s));
+	struct rom_entry_s *dat = calloc(entries +1, sizeof(struct rom_entry_s));
 	struct rom_entry_s *entry = dat;
 	int first = 1;
 	const char *line = ini;
@@ -148,14 +150,7 @@ struct rom_entry_s *convert_entries(const char *ini,
 			continue;
 		else if(strncmplim(line, "[") == 0)
 		{
-			line++;
-			strncpy(entry->track.md5, line, 32);
-			entry->track.md5[32] = '\0';
-		}
-		else if(strncmplim(line, "CRC") == 0)
-		{
-			uint32_t c1, c2;
-			char *endptr;
+			/* New entry. */
 			/* Compensate for 0-based indexing. */
 			if(first)
 				first = 0;
@@ -164,6 +159,15 @@ struct rom_entry_s *convert_entries(const char *ini,
 				/* Set to new entry. */
 				entry++;
 			}
+
+			line++;
+			strncpy(entry->track.md5, line, 32);
+			entry->track.md5[32] = '\0';
+		}
+		else if(strncmplim(line, "CRC") == 0)
+		{
+			uint32_t c1, c2;
+			char *endptr;
 
 			/* Move to first character after equals. */
 			line = strchr(line, '=');
@@ -179,11 +183,25 @@ struct rom_entry_s *convert_entries(const char *ini,
 			c2 = strtoll(line, &endptr, 16);
 			assert(*endptr == '\n');
 			entry->crc = ((uint64_t)c1 << 32) | c2;
+
+			/* Init variables to default values. */
+			entry->conf.status = 0;
+			entry->conf.save_type = 5;
+			entry->conf.players = 4;
+			entry->conf.rumble = 1;
+			entry->conf.transferpak = 0;
+			entry->conf.mempack = 1;
+			entry->conf.biopak = 0;
+			entry->conf.count_per_op = 2;
+			entry->conf.disable_extra_mem = 0;
+			entry->conf.si_dma_duration = 0;
 		}
 		else if(strncmplim(line, "RefMD5") == 0)
 		{
 			line = strchr(line, '=') + 1;
 			entry->conf.reference = 1;
+			strncpy(entry->track.refmd5, line, 32);
+			entry->track.refmd5[32] = '\0';
 
 			/* TODO: Find reference. */
 		}
@@ -274,7 +292,7 @@ struct rom_entry_s *convert_entries(const char *ini,
 			entry->track.cheat = malloc(len);
 			assert(entry->track.cheat != NULL);
 			strncpy(entry->track.cheat, line, len);
-			entry->track.cheat[len - 1] = '\0';
+			entry->track.cheat[len-1] = '\0';
 		}
 		else if(strncmplim(line, "Transferpak") == 0)
 		{
@@ -305,11 +323,11 @@ struct rom_entry_s *convert_entries(const char *ini,
 
 			len = endline - line;
 			if(len >= 64)
-				len = 64;
+				len = 63;
 
 			assert(entry->track.goodname != NULL);
 			strncpy(entry->track.goodname, line, len);
-			entry->track.goodname[len - 1] = '\0';
+			entry->track.goodname[len] = '\0';
 		}
 		else if(*line != '\0')
 		{
@@ -373,33 +391,54 @@ int compare_entry(const void *in1, const void *in2)
 	if(((__int128)e1->crc - (__int128)e2->crc) > 0)
 		return 1;
 
-	return 0;
+	return ((int)e1->conf.reference - (int)e2->conf.reference);
 }
 
 void remove_dupes(struct rom_entry_s *first, size_t *entries)
 {
-	struct rom_entry_s *e = first;
-	for(; e < (first + *entries); e++)
+	struct rom_entry_s *r = calloc(*entries, sizeof(struct rom_entry_s));
+	struct rom_entry_s *r_i = r;
+
+	struct rom_entry_s *last = first + *entries - 1;
+
+	for(struct rom_entry_s *e = first; e < last; e++)
 	{
-		struct rom_entry_s *next = e + 1;
+		memcpy(r_i++, e, sizeof(*e));
 
-		if(e->conf.reference)
-			continue;
-
-		while(e->crc == next->crc)
+		while(e->crc == (e+1)->crc)
 		{
-			/* Check for collision. */
-			assert(!e->conf.reference || !next->conf.reference);
-
-			if(next->conf.reference)
+			if((e+1)->conf.reference == 0)
 			{
-				size_t rem_sz = (next - first) + *entries * sizeof(*e);
-				memmove(e, next, rem_sz);
+				memcpy(r_i, e+1, sizeof(*e));
 			}
 
-			next++;
+			e++;
 		}
 	}
+
+	*entries = (r_i - r);
+	memcpy(first, r, *entries * sizeof(*r));
+	free(r);
+}
+
+void dump_filtered_ini(struct rom_entry_s *all, size_t entries)
+{
+	FILE *f = fopen("fil.ini", "w");
+
+	for(size_t i = 0; i < entries; i++)
+	{
+		fprintf(f, "[%s]\n", all[i].track.md5);
+		fprintf(f, "GoodName=%s\n", all[i].track.goodname);
+		fprintf(f, "CRC=0x%016lX\n", all[i].crc);
+		if(all[i].conf.reference)
+			fprintf(f, "RefMD5=%s\n", all[i].track.refmd5);
+		if(all[i].track.cheat != NULL)
+			fprintf(f, "Cheat0=%s\n", all[i].track.cheat);
+
+		fprintf(f, "\n");
+	}
+
+	fclose(f);
 }
 
 int main(int argc, char *argv[])
@@ -430,6 +469,8 @@ int main(int argc, char *argv[])
 	qsort(all, entries, sizeof(*all), compare_entry);
 	remove_dupes(all, &entries);
 	dump_crc_header(argv[3], all, entries);
+
+	dump_filtered_ini(all, entries);
 
 	/* Read each entry. */
 
