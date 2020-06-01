@@ -318,10 +318,13 @@ struct rom_entry_s *convert_entries(const char *ini,
 			{
 				if(strncmp(cheats[ci], line, len - 1) == 0)
 				{
-					asprintf(&cheats_used_by[ci], "%s\t * %s\n",
+					char *tmp;
+					asprintf(&tmp, "%s\t * %s\n",
 					         cheats_used_by[ci] == NULL ? "" :
 							cheats_used_by[ci],
 					         entry->track.goodname);
+					free(cheats_used_by[ci]);
+					cheats_used_by[ci] = tmp;
 					cheat_found = ci;
 					break;
 				}
@@ -659,10 +662,15 @@ int main(int argc, char *argv[])
 
 	dump_filtered_ini(all, entries);
 
-	/* Read each entry. */
+	/* Free allocations. */
+	for(size_t i = 1; i < cheats_tot; i++)
+	{
+		free(cheats_used_by[i]);
+		free(cheats[i]);
+	}
 
-	/* Sort ROM entries by CRC. */
-	/* Save cheat table,  */
+	free(all);
+	free(ini);
 
 	return EXIT_SUCCESS;
 }
