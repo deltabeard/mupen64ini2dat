@@ -25,11 +25,26 @@
 #define PRINTERR()	\
 	fprintf(stderr, "ERR %s:%d %s\n", __func__, __LINE__, strerror(errno))
 
+enum save_types_e
+{
+	SAVE_EEPROM_4KB,
+	SAVE_EEPROM_16KB,
+	SAVE_SRAM,
+	SAVE_FLASH_RAM,
+	SAVE_CONTROLLER_PACK,
+	SAVE_NONE
+};
+
+const char *save_types_str[] = {
+	"SAVE_EEPROM_4KB", "SAVE_EEPROM_16KB", "SAVE_SRAM", "SAVE_FLASH_RAM",
+	"SAVE_CONTROLLER_PACK", "SAVE_NONE"
+};
+
 struct rom_entry_s
 {
 	uint64_t crc;
 
-	union
+	union rom_conf_u
 	{
 		struct
 		{
@@ -66,13 +81,55 @@ struct rom_entry_s
 		};
 	} conf __attribute__((packed));
 
-	struct {
+	struct
+	{
 		char md5[33];
 		char refmd5[33];
+		uint64_t refcrc;
 		char goodname[64];
 		char *cheat;
 	} track;
 };
+
+#if 0
+union rom_conf_u rom_conf_default_u
+{
+
+	struct
+	{
+		/* Unused value allows for packing entry in exactly 4
+		 * bytes. */
+		unsigned char do_not_use : 1;
+
+		unsigned char save_type : 3;
+		unsigned char players : 3;
+		unsigned char rumble : 1;
+		unsigned char transferpak : 1;
+		unsigned char status : 3;
+		unsigned char count_per_op : 3;
+		unsigned char disable_extra_mem : 1;
+
+		/* Actual cheat data isn't stored in rom data entry, but
+		 * in a look-up table. This value is the index for the
+		 * cheats look-up table. */
+		unsigned char cheat_lut : 5;
+
+		unsigned char mempack : 1;
+		unsigned char biopak : 1;
+
+		/* Only Tetris 64 requires this. If 1, then set to
+		 * 0x100, otherwise the default of 0x900 is assumed. */
+		unsigned char si_dma_duration : 1;
+	};
+	struct
+	{
+		/* Does this entry refer to another entry?
+		* If it does, look up the rom entry at value reference_entry. */
+		unsigned char reference : 1;
+		uint16_t reference_entry;
+	};
+} __attribute__((packed));
+#endif
 
 static char *read_entire_file(const char *filename)
 {
@@ -116,7 +173,8 @@ static size_t get_num_occs(const char *haystack, const char *needle)
 	char *str = strdup(haystack);
 	char *token = strtok(str, "\n");
 
-	do {
+	do
+	{
 		if(strncmp(token, needle, strlen(needle)) == 0)
 			occurances++;
 	}
@@ -127,10 +185,10 @@ static size_t get_num_occs(const char *haystack, const char *needle)
 }
 
 struct rom_entry_s *convert_entries(const char *ini,
-				    const size_t entries)
+                                    const size_t entries)
 {
-	#define strncmplim(hay, needle) strncmp(hay, needle, strlen(needle))
-	struct rom_entry_s *dat = calloc(entries +1, sizeof(struct rom_entry_s));
+#define strncmplim(hay, needle) strncmp(hay, needle, strlen(needle))
+	struct rom_entry_s *dat = calloc(entries + 1, sizeof(struct rom_entry_s));
 	struct rom_entry_s *entry = dat;
 	int first = 1;
 	const char *line = ini;
@@ -212,26 +270,26 @@ struct rom_entry_s *convert_entries(const char *ini,
 			{
 			case 'E':
 				if(*(line + strlen("Eeprom ")) == '4')
-					entry->conf.save_type = 0;
+					entry->conf.save_type = SAVE_EEPROM_4KB;
 				else if(*(line + strlen("Eeprom ")) == '1')
-					entry->conf.save_type = 1;
+					entry->conf.save_type = SAVE_EEPROM_16KB;
 				else
 					abort();
 				break;
 			case 'S':
-				entry->conf.save_type = 2;
+				entry->conf.save_type = SAVE_SRAM;
 				break;
 
 			case 'F':
-				entry->conf.save_type = 3;
+				entry->conf.save_type = SAVE_FLASH_RAM;
 				break;
 
 			case 'C':
-				entry->conf.save_type = 4;
+				entry->conf.save_type = SAVE_CONTROLLER_PACK;
 				break;
 
 			case 'N':
-				entry->conf.save_type = 5;
+				entry->conf.save_type = SAVE_NONE;
 				break;
 
 			default:
@@ -292,7 +350,7 @@ struct rom_entry_s *convert_entries(const char *ini,
 			entry->track.cheat = malloc(len);
 			assert(entry->track.cheat != NULL);
 			strncpy(entry->track.cheat, line, len);
-			entry->track.cheat[len-1] = '\0';
+			entry->track.cheat[len - 1] = '\0';
 		}
 		else if(strncmplim(line, "Transferpak") == 0)
 		{
@@ -344,7 +402,7 @@ out:
 	return dat;
 }
 
-void dump_crc_header(const char *filename, struct rom_entry_s *e, size_t entries)
+void dump_header(const char *filename, struct rom_entry_s *e, size_t entries)
 {
 	FILE *f = fopen(filename, "wb");
 	time_t now = time(NULL);
@@ -355,12 +413,11 @@ void dump_crc_header(const char *filename, struct rom_entry_s *e, size_t entries
 	tmp = localtime(&now);
 	assert(tmp != NULL);
 
-	if (strftime(time_str, sizeof(time_str), "%c", tmp) == 0)
+	if(strftime(time_str, sizeof(time_str), "%c", tmp) == 0)
 		abort();
 
 	fprintf(f, "/* Generated at %s using mupenini2dat */\n\n", time_str);
-	fprintf(f, "const uint64_t[%zu] = {\n\t", entries);
-
+	fprintf(f, "const uint64_t rom_crc[%zu] = {\n\t", entries);
 	for(size_t i = 0; i < entries; i++)
 	{
 		if(i != 0 && i % 3 == 0)
@@ -373,10 +430,74 @@ void dump_crc_header(const char *filename, struct rom_entry_s *e, size_t entries
 		}
 
 		fprintf(f, "0x%016lX%s", e[i].crc,
-			i == (entries-1) ? "" : ",");
+		        i == (entries - 1) ? "" : ",");
 	}
+	fprintf(f, "\n};\n");
 
-	fprintf(f, "\n}\n");
+	fprintf(f, "const struct rom_entry_s rom_dat[%zu] = {\n", entries);
+	struct rom_entry_s *last = e + entries;
+	for(struct rom_entry_s *i = e; i < last; i++)
+	{
+		fprintf(f, "\t/* %s\n", i->track.goodname);
+		fprintf(f, "\t * CRC: %08lX %08lX\n", i->crc >> 32, i->crc & 0xFFFFFFFF);
+		fprintf(f, "\t * Entry: %zu */\n", i - e);
+		fprintf(f, "\t{\n");
+
+		/* This entry refers to another. */
+		if(i->conf.reference == 1)
+		{
+			unsigned ref_i;
+			for(ref_i = 0; ref_i < entries; ref_i++)
+			{
+				if(i->track.refcrc == e[ref_i].crc)
+					break;
+			}
+
+			/* Check if reference actually exists. If it doesn't, it
+			 * probably used default values. */
+			if(i->track.refcrc != e[ref_i].crc)
+				continue;
+
+			fprintf(f, "\t\t.reference = %u,\n", i->conf.reference);
+			fprintf(f, "\t\t.reference_entry = %u\n", ref_i);
+			fprintf(f, "\t}%s\n", i == (last - 1) ? "" : ",");
+			continue;
+		}
+
+		if(i->conf.status != 0)
+			fprintf(f, "\t\t.status = %u,\n", i->conf.status);
+
+		if(i->conf.save_type != SAVE_NONE)
+			fprintf(f, "\t\t.save_type = %s,\n", save_types_str[i->conf.save_type]);
+
+		if(i->conf.players != 4)
+			fprintf(f, "\t\t.players = %u,\n", i->conf.players);
+
+		if(i->conf.rumble != 1)
+			fprintf(f, "\t\t.rumble = %u,\n", i->conf.rumble);
+
+		if(i->conf.transferpak != 0)
+			fprintf(f, "\t\t.transferpak = %u,\n", i->conf.transferpak);
+
+		if(i->conf.mempack != 1)
+			fprintf(f, "\t\t.mempack = %u,\n", i->conf.mempack);
+
+		if(i->conf.biopak != 0)
+			fprintf(f, "\t\t.biopak = %u,\n", i->conf.biopak);
+
+		if(i->conf.count_per_op != 2)
+			fprintf(f, "\t\t.count_per_op = %u,\n", i->conf.count_per_op);
+
+		if(i->conf.disable_extra_mem != 0)
+			fprintf(f, "\t\t.disable_extra_mem = %u,\n", i->conf.disable_extra_mem);
+
+		if(i->conf.si_dma_duration != 0)
+			fprintf(f, "\t\t.si_dma_duration = %u,\n", i->conf.si_dma_duration);
+
+		fprintf(f, "\t}%s\n", i == (last - 1) ? "" : ",");
+	}
+	fprintf(f, "};\n");
+
 	fclose(f);
 }
 
@@ -405,14 +526,32 @@ void remove_dupes(struct rom_entry_s *first, size_t *entries)
 	{
 		memcpy(r_i++, e, sizeof(*e));
 
-		while(e->crc == (e+1)->crc)
+		while(e->crc == (e + 1)->crc)
 		{
-			if((e+1)->conf.reference == 0)
+			if((e + 1)->conf.reference == 0)
 			{
-				memcpy(r_i, e+1, sizeof(*e));
+				memcpy(r_i, e + 1, sizeof(*e));
 			}
 
 			e++;
+		}
+	}
+
+	*entries = (r_i - r);
+	memcpy(first, r, *entries * sizeof(*r));
+
+	/* Remove entries that only use defaults. */
+	r_i = r;
+	for(struct rom_entry_s *e = first; e < last; e++)
+	{
+		if(e->conf.status != 0 || e->conf.save_type != SAVE_NONE ||
+			e->conf.players != 4 || e->conf.rumble != 1 ||
+			e->conf.transferpak != 0 || e->conf.mempack != 1 ||
+			e->conf.biopak != 0 || e->conf.count_per_op != 2 ||
+			e->conf.disable_extra_mem != 0 ||
+			e->conf.si_dma_duration != 0)
+		{
+			memcpy(r_i++, e, sizeof(*e));
 		}
 	}
 
@@ -441,16 +580,36 @@ void dump_filtered_ini(struct rom_entry_s *all, size_t entries)
 	fclose(f);
 }
 
+void resolve_deps(struct rom_entry_s *all, size_t entries)
+{
+	for(struct rom_entry_s *e = all; e < all + entries; e++)
+	{
+		uint16_t i;
+
+		if(e->conf.reference == 0)
+			continue;
+
+		for(i = 0; i < entries; i++)
+		{
+			if(strncmp(e->track.refmd5, all[i].track.md5, 32) == 0)
+				break;
+		}
+
+		e->conf.reference_entry = i;
+		e->track.refcrc = all[i].crc;
+	}
+}
+
 int main(int argc, char *argv[])
 {
 	size_t entries;
 	char *ini;
 	struct rom_entry_s *all;
 
-	if(argc != 4)
+	if(argc != 3)
 	{
 		fprintf(stderr,
-			"mupenini2dat mupen64plus.ini rom.dat crc.h\n");
+		        "mupenini2dat mupen64plus.ini rom_dat.h\n");
 		return EXIT_FAILURE;
 	}
 
@@ -467,8 +626,9 @@ int main(int argc, char *argv[])
 
 	all = convert_entries(ini, entries);
 	qsort(all, entries, sizeof(*all), compare_entry);
+	resolve_deps(all, entries);
 	remove_dupes(all, &entries);
-	dump_crc_header(argv[3], all, entries);
+	dump_header(argv[2], all, entries);
 
 	dump_filtered_ini(all, entries);
 
@@ -479,3 +639,4 @@ int main(int argc, char *argv[])
 
 	return EXIT_SUCCESS;
 }
+// kate: indent-mode cstyle; indent-width 8; replace-tabs off; tab-width 8;
