@@ -67,7 +67,7 @@ struct rom_entry_s
 			 * cheats look-up table. */
 			unsigned char cheat_lut : 5;
 
-			unsigned char mempack : 1;
+			unsigned char mempak : 1;
 			unsigned char biopak : 1;
 
 			/* Only Tetris 64 requires this. If 1, then set to
@@ -92,7 +92,7 @@ struct rom_entry_s
 	} track;
 };
 
-char *cheats[32] = { "INVALID" };
+char *cheats[32] = { NULL };
 size_t cheats_tot = 1;
 char *cheats_used_by[32] = { NULL };
 
@@ -213,7 +213,7 @@ struct rom_entry_s *convert_entries(const char *ini,
 			entry->conf.players = 4;
 			entry->conf.rumble = 1;
 			entry->conf.transferpak = 0;
-			entry->conf.mempack = 1;
+			entry->conf.mempak = 1;
 			entry->conf.biopak = 0;
 			entry->conf.count_per_op = 2;
 			entry->conf.disable_extra_mem = 0;
@@ -410,6 +410,7 @@ void dump_header(const char *filename, struct rom_entry_s *e, size_t entries)
 	assert(strftime(time_str, sizeof(time_str), "%c", tmp) != 0);
 
 	fprintf(f, "/* Generated at %s using mupenini2dat */\n\n", time_str);
+	fprintf(f, "#pragma once\n");
 	fprintf(f, "#include <stdint.h>\n\n");
 
 	fprintf(f, "struct rom_entry_s\n"
@@ -427,7 +428,7 @@ void dump_header(const char *filename, struct rom_entry_s *e, size_t entries)
 		"\t\t\tunsigned char count_per_op : 3;\n"
 		"\t\t\tunsigned char disable_extra_mem : 1;\n"
 		"\t\t\tunsigned char cheat_lut : 5;\n"
-		"\t\t\tunsigned char mempack : 1;\n"
+		"\t\t\tunsigned char mempak : 1;\n"
 		"\t\t\tunsigned char biopak : 1;\n"
 		"\t\t\tunsigned char si_dma_duration : 1;\n"
 		"\t\t};\n"
@@ -501,7 +502,7 @@ void dump_header(const char *filename, struct rom_entry_s *e, size_t entries)
 		fprintf(f, "\t\t.players = %u,\n", i->conf.players);
 		fprintf(f, "\t\t.rumble = %u,\n", i->conf.rumble);
 		fprintf(f, "\t\t.transferpak = %u,\n", i->conf.transferpak);
-		fprintf(f, "\t\t.mempack = %u,\n", i->conf.mempack);
+		fprintf(f, "\t\t.mempak = %u,\n", i->conf.mempak);
 		fprintf(f, "\t\t.biopak = %u,\n", i->conf.biopak);
 		fprintf(f, "\t\t.count_per_op = %u,\n", i->conf.count_per_op);
 		fprintf(f, "\t\t.disable_extra_mem = %u,\n", i->conf.disable_extra_mem);
@@ -514,8 +515,9 @@ void dump_header(const char *filename, struct rom_entry_s *e, size_t entries)
 	if(cheats_tot == 0)
 		goto out;
 
-	fprintf(f, "const char *cheats[%zu] = {\n", cheats_tot);
-	for(size_t i = 0; i < cheats_tot; i++)
+	fprintf(f, "const char *const cheats[%zu] = {\n", cheats_tot);
+	fprintf(f, "\tNULL,\n");
+	for(size_t i = 1; i < cheats_tot; i++)
 	{
 		if(cheats_used_by[i] != NULL)
 		{
@@ -578,7 +580,7 @@ void remove_dupes(struct rom_entry_s *first, size_t *entries)
 	{
 		if(e->conf.status != 0 || e->conf.save_type != SAVE_NONE ||
 			e->conf.players != 4 || e->conf.rumble != 1 ||
-			e->conf.transferpak != 0 || e->conf.mempack != 1 ||
+			e->conf.transferpak != 0 || e->conf.mempak != 1 ||
 			e->conf.biopak != 0 || e->conf.count_per_op != 2 ||
 			e->conf.disable_extra_mem != 0 ||
 			e->conf.si_dma_duration != 0 || e->conf.reference != 1)
