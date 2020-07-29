@@ -1,6 +1,6 @@
 /**
  * Converts a Mupen64 INI ROM list to a small binary representation of it.
- * Copyright (c) 2020 Mahyar Koshkouei
+ * Copyright (c) 2020 Mahyar Koshkouei <mk@deltabeard.com>
  *
  * Permission to use, copy, modify, and/or distribute this software for any purpose
  * with or without fee is hereby granted.
@@ -641,7 +641,7 @@ int main(int argc, char *argv[])
 	if(argc != 3)
 	{
 		fprintf(stderr,
-		        "mupenini2dat mupen64plus.ini rom_dat.h\n");
+		        "Usage: mupenini2dat mupen64plus.ini rom_dat.h\n");
 		return EXIT_FAILURE;
 	}
 
