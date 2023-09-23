@@ -1,4 +1,4 @@
-/* Generated at Mon Jun  1 18:38:28 2020 using mupenini2dat */
+/* Generated at 09/23/23 18:29:30 using mupenini2dat */
 
 #pragma once
 #include <stdint.h>
@@ -40,7 +40,7 @@ enum save_types_e
 	SAVE_NONE
 };
 
-const uint64_t rom_crc[1765] = {
+const uint64_t rom_crc[1766] = {
 	0x0000000000000000, 0x0000000000005053, 0x001A3BD0AFB3DE1A,
 	0x00A46EE3554158C6, 0x00BC1D7800709D53, 0x011F98B21E1C8263,
 	0x015BB81EF105AC82, 0x018CF7335409AD45, 0x0198A651FC219D84,
@@ -524,116 +524,116 @@ const uint64_t rom_crc[1765] = {
 	0xD2015E56A9FE0CE6, 0xD21AF769DE1A0E3D, 0xD22943DAAC2B77C0,
 	0xD250103E136A0F0C, 0xD25C121113EEBF67, 0xD2B908C8E0E73A1D,
 	0xD2BE2F1438453788, 0xD2F75C12E89EB415, 0xD32264A1989987EA,
-	0xD3D806FCB43AA2A8, 0xD3DF2FEE8090B699, 0xD3F10E5D052EA579,
-	0xD3F52BA51258EDFE, 0xD3F97D496924135B, 0xD43DA81F021E1E19,
-	0xD48944D1B0D93A0E, 0xD49DFF908DB53A8C, 0xD4C45A1AF425B25E,
-	0xD4DD9982FDBA7B67, 0xD51CF20D5534AF93, 0xD52FE29D8EA6A759,
-	0xD543BCD62BA5E256, 0xD571C883822D3FCF, 0xD5898CAF6007B65B,
-	0xD5B2339CCABCCAED, 0xD5BDCD1D393AFE43, 0xD5CA46C2F8555155,
-	0xD614E5BFA76DBCC1, 0xD666593BD7A25C07, 0xD692CC5EEC58D072,
-	0xD6D29529D4EADEE4, 0xD6FBA4A86326AA2C, 0xD7134F8DC11A00B5,
-	0xD715CC70271CF5D6, 0xD72FD14D1FED32C4, 0xD741CD80ACA9B912,
-	0xD7484C2A56CFF26D, 0xD76333AC0CB6219D, 0xD767D118A1B07602,
-	0xD7891F1CC3E43788, 0xD7A6DCFACCFEB6B7, 0xD7C762B6F83D9642,
-	0xD7F735531347659F, 0xD805980492739B11, 0xD81963C74271A3AA,
-	0xD83045C8F29D3A36, 0xD83BB920CC406416, 0xD84C17CA13F8F651,
-	0xD84EEA8445B2F1B4, 0xD851B920F3D6C0CE, 0xD852E2380E52A960,
-	0xD85C4E2988E276AF, 0xD89261A9B1A2C9AF, 0xD8928E46965CE432,
-	0xD89BE2F899C97ADF, 0xD89E0E55B17AA99A, 0xD9042FBBFCFF997C,
-	0xD9EDD54D6BB8E274, 0xD9F75C12A8859B59, 0xD9FECC50D3AA8423,
-	0xDA0E5024969ED261, 0xDA233397FF46DF64, 0xDA573DB99442D273,
-	0xDAA66890ED4CCD04, 0xDAA6CA7D56AA4394, 0xDAA76993D8ACF77C,
-	0xDACDE68E7381B3C9, 0xDAD7F7518B6322F0, 0xDB363DDA50C1C2A5,
-	0xDB6E353B205B0C53, 0xDB7184C9F53AC14A, 0xDB833E3463548286,
-	0xDBF4EA9D333E82C0, 0xDC36626A3F3770CB, 0xDC3BAA590ABB456A,
-	0xDC41E81EAC36CAD1, 0xDC649466572FF0D9, 0xDCB6EAFAC6BBCFA3,
-	0xDCBC50D109FD1AA3, 0xDCBCACD1A67DDFB4, 0xDCBCACD1D72FAA33,
-	0xDCBCACD1E1051EA6, 0xDCBCACD1F294D541, 0xDCBE12CDFCCB5E58,
-	0xDCCEDB8FBA79BEDE, 0xDCCF21349DD63578, 0xDD10BC7EF900B351,
-	0xDD16F47CA8B748C7, 0xDD26FDA1CB4A6BE3, 0xDD318CE2B73798BA,
-	0xDD95F49D2A9B8893, 0xDDBA4DE5B107004A, 0xDDD93C85DAE381E8,
-	0xDDD982EF3B0D6FEC, 0xDDEF1333E7209D07, 0xDDF460CC3CA634C0,
-	0xDE4E5E2EDCD0615D, 0xDEB78BBA52F6BD9D, 0xDED0DD9AE78225A7,
-	0xDEE584A20F161187, 0xDEE596ABAF3B7AE7, 0xDF0C666A1F52B368,
-	0xDF331A185FD4E044, 0xDF5741919EB5123D, 0xDF6FF0F429D14238,
-	0xDF98B95D58840978, 0xDFD784ADAE426603, 0xDFD8AB473CDBEB89,
-	0xDFE61153D76118E6, 0xDFF227D90D4D8169, 0xE0044E9ECD659D0D,
-	0xE0144180650B78C9, 0xE09DAF6C8A2B86F4, 0xE0A79F8C32CC97FA,
-	0xE0B92B9480E87CBD, 0xE0B92B94B9A7E025, 0xE0C4F72F769E1506,
-	0xE13AE2DC4FB65CE8, 0xE185E2914E50766D, 0xE1AAA92527C9C94B,
-	0xE1C7ABD64E707F28, 0xE1EF93F714908B0B, 0xE2A3204946E8F8E2,
-	0xE2BC82A2591CD694, 0xE2D37CF0F57E4EAE, 0xE328B4FA004A28E1,
-	0xE340A49C74318D41, 0xE36166C28613A2E5, 0xE378B28A0CA18BCC,
-	0xE3AB4ED083040DD2, 0xE3BD221D3C0834D3, 0xE3CCFE36398FBC75,
-	0xE3D6A7952A1C5D3C, 0xE402430DD2FCFC9D, 0xE436467A82DE8F9B,
-	0xE43C976505B1C1BE, 0xE48E01F5E6E51F9B, 0xE49066799F243F05,
-	0xE4B08007A602FF33, 0xE4B35E4C1AC45CC9, 0xE4C44FDA98532F4A,
-	0xE584FE349D91B1E2, 0xE5B7F4052C4462BF, 0xE600831E59F422A8,
-	0xE606EE268783EC43, 0xE616B5BCC9658B88, 0xE61CFF0ACE1C0D71,
-	0xE6419BC569011DE3, 0xE688A5B8B14B3F18, 0xE68A000E639166DD,
-	0xE6A95A4FBAD2EA23, 0xE6B339F622AE6901, 0xE6BA0A068A3D2C2F,
-	0xE6FCB468CFAC7528, 0xE73C7C4FAF93B838, 0xE74607D1751139B4,
-	0xE7BDA0BEADA09CAC, 0xE7D20193C1158E93, 0xE820670AA99ED0EF,
-	0xE8522F0443FA513A, 0xE86415A698395B53, 0xE876170226AD5DBE,
-	0xE87D098B4C70341C, 0xE87F1ACE809F204B, 0xE896092BDC244D4E,
-	0xE8BF8416F2D9DA43, 0xE8C95AFC35D121DA, 0xE8D29DA015E61D94,
-	0xE8D2A5005AA8DBCA, 0xE8DBC96ADAC9E2EE, 0xE8E5B17944AA30E8,
-	0xE8E8DD70415DD198, 0xE8FC8EA19F738391, 0xE921953313FBAFBD,
-	0xE972B3857668D414, 0xE97955C6BC338D38, 0xE9F523366BEFAA5F,
-	0xEA06F8C307C2DEED, 0xEA090572192F9673, 0xEA2A6A7552B2C00F,
-	0xEA6D4C3F13837E54, 0xEA6D5BF8E2B4696C, 0xEA71056AE4214847,
-	0xEAB7B429BAC92C57, 0xEAC074190F9F72A0, 0xEAE6ACE2020B4384,
-	0xEB38F792190EA246, 0xEB499C8FCD4567B6, 0xEB7709E227A91031,
-	0xEBA949DC39BAECBD, 0xEBE8AA17B1EF65E6, 0xEBEEA8DBF2ECB23C,
-	0xEBF5F6B7C956D739, 0xEBFE2397FF74DA34, 0xEC0F690D32A7438C,
-	0xEC417312EB31DE5F, 0xEC58EABFAD7C7169, 0xEC7011B77616D72B,
-	0xEC986EA9EB463E4A, 0xEC9BECFFCAB83632, 0xECAEC238EE351DDA,
-	0xECBD95DD1FAB637D, 0xED42A2D47A71CD91, 0xED567D0F38B08915,
-	0xED98957E8242DCAC, 0xEDA1A0C758EE0464, 0xEDAFD3C039EF3599,
-	0xEDD6E03168136013, 0xEDF419A8BF1904CC, 0xEDFB6B018893F62C,
-	0xEE08C6026BC2D5A6, 0xEE4A0E338FD588C9, 0xEE4FD7C29CF1D938,
-	0xEE7AF9ECA750B2D3, 0xEE802DC4690BD57D, 0xEEE48FAF6A92BAFF,
-	0xEEF7DE2357E4FEA9, 0xEF623F50ECBB509B, 0xEF703CA44D4A9AC9,
-	0xEF9E9714C03B2C7D, 0xEFCEAF0022094848, 0xEFDAFEA4E38D6A80,
-	0xEFDF9140A4168D6B, 0xF00F2D4E340FAAF4, 0xF034001AAE47ED06,
-	0xF03C24CAC5237BCC, 0xF04A729C19971680, 0xF050746C247B820B,
-	0xF050D644B5A5CED1, 0xF0C5F320B22773CA, 0xF11B663A698824C0,
-	0xF1297BC942CDAE9D, 0xF1301043FD80541A, 0xF163A242F2449B3B,
-	0xF1850C35ACE07912, 0xF23CA406EC2ACE78, 0xF255D6F1B65D6728,
-	0xF291B959A24CBCAF, 0xF2A653CB60633B3B, 0xF2C3A524A1C4DB13,
-	0xF2F75C3636637257, 0xF35D5335B7667CB7, 0xF35D5F958AFE3D69,
-	0xF3700A534795C23D, 0xF389A35A17785562, 0xF3C5BF9B160F33E2,
-	0xF3D27F54C111ACF9, 0xF3DD35BA4152E075, 0xF3F2F3856E490C7F,
-	0xF41B6343C10661E6, 0xF43B45BA2F0E9B6F, 0xF4520439753A6281,
-	0xF45A6784F587C72F, 0xF4646B69C5751095, 0xF468118CE32EE44E,
-	0xF478D8B39716DD6D, 0xF4B6415946FC16CF, 0xF4CBE92CB392ED12,
-	0xF4D89C083F34930D, 0xF523730199E3EE93, 0xF5360FBE2BF1691D,
-	0xF5363349DBF9D21B, 0xF568D51E7E49BA1E, 0xF5733C6717A3973A,
-	0xF5C214038FCA0710, 0xF5C5866D052713D9, 0xF611F4BAC584135C,
-	0xF63B89CE4582D57D, 0xF6621BFB186D11A6, 0xF667DC0486510A81,
-	0xF6E3494AE4EC8933, 0xF774EAEEF0D8B13E, 0xF795ACE18DEDE03C,
-	0xF7B1C8E870536D3E, 0xF7DF7D0DED52018F, 0xF7F52DB82195E636,
-	0xF7FE28F6C3F2ACC3, 0xF8009DB06B291823, 0xF828DF21C5E83F66,
-	0xF82C85BEDEB717E2, 0xF82DD3778C3FB347, 0xF8B1C7C71EFCA431,
-	0xF908CA4C36464327, 0xF96E28F7421A4285, 0xF9D411E37CB29BC0,
-	0xF9F75B92AFEC042B, 0xF9FC3090FF014EC2, 0xFA5A3DFFB4C9CDB9,
-	0xFA7D393597AC54FC, 0xFA8C4571BBE7F9C0, 0xFAB972E41CB0882B,
-	0xFB315F957786CBFB, 0xFB3C48D08D28F69F, 0xFB610592898A9705,
-	0xFBB9F1FA6BF88689, 0xFC051819A46A48F6, 0xFC70E27208FFE7AA,
-	0xFC74D4759A0278AB, 0xFC7797BF4A95E83C, 0xFCB2955BB302626D,
-	0xFCBCCB2172903C6B, 0xFCE0D79965316C54, 0xFD2FC8753BD10D89,
-	0xFD61BB45FBB51EB2, 0xFD6907F083CBC160, 0xFD73F7759724755A,
-	0xFD8F687542608FDC, 0xFDA245D2A74A3D47, 0xFDAA963CFDCCD971,
-	0xFDD248B2569A020E, 0xFE05840B9393320C, 0xFE16991946F54C2D,
-	0xFE24AC631B41AA17, 0xFE4B6B43081D29A7, 0xFE5DC5D4E1815BE5,
-	0xFE667A120D2195AD, 0xFE94E570E4873A9C, 0xFECE2B85331406D1,
-	0xFEE970104E94A9A0, 0xFEF9D364FBD6D06E, 0xFF0AC362F4EC09B3,
-	0xFF2F2FB4D161149A, 0xFF44EDC41AAE9213, 0xFF922478570B5673,
-	0xFFCAA7C168858537
+	0xD3D806FCB43AA2A8, 0xD3DF2FEE8090B699, 0xD3E792A505D39C97,
+	0xD3F10E5D052EA579, 0xD3F52BA51258EDFE, 0xD3F97D496924135B,
+	0xD43DA81F021E1E19, 0xD48944D1B0D93A0E, 0xD49DFF908DB53A8C,
+	0xD4C45A1AF425B25E, 0xD4DD9982FDBA7B67, 0xD51CF20D5534AF93,
+	0xD52FE29D8EA6A759, 0xD543BCD62BA5E256, 0xD571C883822D3FCF,
+	0xD5898CAF6007B65B, 0xD5B2339CCABCCAED, 0xD5BDCD1D393AFE43,
+	0xD5CA46C2F8555155, 0xD614E5BFA76DBCC1, 0xD666593BD7A25C07,
+	0xD692CC5EEC58D072, 0xD6D29529D4EADEE4, 0xD6FBA4A86326AA2C,
+	0xD7134F8DC11A00B5, 0xD715CC70271CF5D6, 0xD72FD14D1FED32C4,
+	0xD741CD80ACA9B912, 0xD7484C2A56CFF26D, 0xD76333AC0CB6219D,
+	0xD767D118A1B07602, 0xD7891F1CC3E43788, 0xD7A6DCFACCFEB6B7,
+	0xD7C762B6F83D9642, 0xD7F735531347659F, 0xD805980492739B11,
+	0xD81963C74271A3AA, 0xD83045C8F29D3A36, 0xD83BB920CC406416,
+	0xD84C17CA13F8F651, 0xD84EEA8445B2F1B4, 0xD851B920F3D6C0CE,
+	0xD852E2380E52A960, 0xD85C4E2988E276AF, 0xD89261A9B1A2C9AF,
+	0xD8928E46965CE432, 0xD89BE2F899C97ADF, 0xD89E0E55B17AA99A,
+	0xD9042FBBFCFF997C, 0xD9EDD54D6BB8E274, 0xD9F75C12A8859B59,
+	0xD9FECC50D3AA8423, 0xDA0E5024969ED261, 0xDA233397FF46DF64,
+	0xDA573DB99442D273, 0xDAA66890ED4CCD04, 0xDAA6CA7D56AA4394,
+	0xDAA76993D8ACF77C, 0xDACDE68E7381B3C9, 0xDAD7F7518B6322F0,
+	0xDB363DDA50C1C2A5, 0xDB6E353B205B0C53, 0xDB7184C9F53AC14A,
+	0xDB833E3463548286, 0xDBF4EA9D333E82C0, 0xDC36626A3F3770CB,
+	0xDC3BAA590ABB456A, 0xDC41E81EAC36CAD1, 0xDC649466572FF0D9,
+	0xDCB6EAFAC6BBCFA3, 0xDCBC50D109FD1AA3, 0xDCBCACD1A67DDFB4,
+	0xDCBCACD1D72FAA33, 0xDCBCACD1E1051EA6, 0xDCBCACD1F294D541,
+	0xDCBE12CDFCCB5E58, 0xDCCEDB8FBA79BEDE, 0xDCCF21349DD63578,
+	0xDD10BC7EF900B351, 0xDD16F47CA8B748C7, 0xDD26FDA1CB4A6BE3,
+	0xDD318CE2B73798BA, 0xDD95F49D2A9B8893, 0xDDBA4DE5B107004A,
+	0xDDD93C85DAE381E8, 0xDDD982EF3B0D6FEC, 0xDDEF1333E7209D07,
+	0xDDF460CC3CA634C0, 0xDE4E5E2EDCD0615D, 0xDEB78BBA52F6BD9D,
+	0xDED0DD9AE78225A7, 0xDEE584A20F161187, 0xDEE596ABAF3B7AE7,
+	0xDF0C666A1F52B368, 0xDF331A185FD4E044, 0xDF5741919EB5123D,
+	0xDF6FF0F429D14238, 0xDF98B95D58840978, 0xDFD784ADAE426603,
+	0xDFD8AB473CDBEB89, 0xDFE61153D76118E6, 0xDFF227D90D4D8169,
+	0xE0044E9ECD659D0D, 0xE0144180650B78C9, 0xE09DAF6C8A2B86F4,
+	0xE0A79F8C32CC97FA, 0xE0B92B9480E87CBD, 0xE0B92B94B9A7E025,
+	0xE0C4F72F769E1506, 0xE13AE2DC4FB65CE8, 0xE185E2914E50766D,
+	0xE1AAA92527C9C94B, 0xE1C7ABD64E707F28, 0xE1EF93F714908B0B,
+	0xE2A3204946E8F8E2, 0xE2BC82A2591CD694, 0xE2D37CF0F57E4EAE,
+	0xE328B4FA004A28E1, 0xE340A49C74318D41, 0xE36166C28613A2E5,
+	0xE378B28A0CA18BCC, 0xE3AB4ED083040DD2, 0xE3BD221D3C0834D3,
+	0xE3CCFE36398FBC75, 0xE3D6A7952A1C5D3C, 0xE402430DD2FCFC9D,
+	0xE436467A82DE8F9B, 0xE43C976505B1C1BE, 0xE48E01F5E6E51F9B,
+	0xE49066799F243F05, 0xE4B08007A602FF33, 0xE4B35E4C1AC45CC9,
+	0xE4C44FDA98532F4A, 0xE584FE349D91B1E2, 0xE5B7F4052C4462BF,
+	0xE600831E59F422A8, 0xE606EE268783EC43, 0xE616B5BCC9658B88,
+	0xE61CFF0ACE1C0D71, 0xE6419BC569011DE3, 0xE688A5B8B14B3F18,
+	0xE68A000E639166DD, 0xE6A95A4FBAD2EA23, 0xE6B339F622AE6901,
+	0xE6BA0A068A3D2C2F, 0xE6FCB468CFAC7528, 0xE73C7C4FAF93B838,
+	0xE74607D1751139B4, 0xE7BDA0BEADA09CAC, 0xE7D20193C1158E93,
+	0xE820670AA99ED0EF, 0xE8522F0443FA513A, 0xE86415A698395B53,
+	0xE876170226AD5DBE, 0xE87D098B4C70341C, 0xE87F1ACE809F204B,
+	0xE896092BDC244D4E, 0xE8BF8416F2D9DA43, 0xE8C95AFC35D121DA,
+	0xE8D29DA015E61D94, 0xE8D2A5005AA8DBCA, 0xE8DBC96ADAC9E2EE,
+	0xE8E5B17944AA30E8, 0xE8E8DD70415DD198, 0xE8FC8EA19F738391,
+	0xE921953313FBAFBD, 0xE972B3857668D414, 0xE97955C6BC338D38,
+	0xE9F523366BEFAA5F, 0xEA06F8C307C2DEED, 0xEA090572192F9673,
+	0xEA2A6A7552B2C00F, 0xEA6D4C3F13837E54, 0xEA6D5BF8E2B4696C,
+	0xEA71056AE4214847, 0xEAB7B429BAC92C57, 0xEAC074190F9F72A0,
+	0xEAE6ACE2020B4384, 0xEB38F792190EA246, 0xEB499C8FCD4567B6,
+	0xEB7709E227A91031, 0xEBA949DC39BAECBD, 0xEBE8AA17B1EF65E6,
+	0xEBEEA8DBF2ECB23C, 0xEBF5F6B7C956D739, 0xEBFE2397FF74DA34,
+	0xEC0F690D32A7438C, 0xEC417312EB31DE5F, 0xEC58EABFAD7C7169,
+	0xEC7011B77616D72B, 0xEC986EA9EB463E4A, 0xEC9BECFFCAB83632,
+	0xECAEC238EE351DDA, 0xECBD95DD1FAB637D, 0xED42A2D47A71CD91,
+	0xED567D0F38B08915, 0xED98957E8242DCAC, 0xEDA1A0C758EE0464,
+	0xEDAFD3C039EF3599, 0xEDD6E03168136013, 0xEDF419A8BF1904CC,
+	0xEDFB6B018893F62C, 0xEE08C6026BC2D5A6, 0xEE4A0E338FD588C9,
+	0xEE4FD7C29CF1D938, 0xEE7AF9ECA750B2D3, 0xEE802DC4690BD57D,
+	0xEEE48FAF6A92BAFF, 0xEEF7DE2357E4FEA9, 0xEF623F50ECBB509B,
+	0xEF703CA44D4A9AC9, 0xEF9E9714C03B2C7D, 0xEFCEAF0022094848,
+	0xEFDAFEA4E38D6A80, 0xEFDF9140A4168D6B, 0xF00F2D4E340FAAF4,
+	0xF034001AAE47ED06, 0xF03C24CAC5237BCC, 0xF04A729C19971680,
+	0xF050746C247B820B, 0xF050D644B5A5CED1, 0xF0C5F320B22773CA,
+	0xF11B663A698824C0, 0xF1297BC942CDAE9D, 0xF1301043FD80541A,
+	0xF163A242F2449B3B, 0xF1850C35ACE07912, 0xF23CA406EC2ACE78,
+	0xF255D6F1B65D6728, 0xF291B959A24CBCAF, 0xF2A653CB60633B3B,
+	0xF2C3A524A1C4DB13, 0xF2F75C3636637257, 0xF35D5335B7667CB7,
+	0xF35D5F958AFE3D69, 0xF3700A534795C23D, 0xF389A35A17785562,
+	0xF3C5BF9B160F33E2, 0xF3D27F54C111ACF9, 0xF3DD35BA4152E075,
+	0xF3F2F3856E490C7F, 0xF41B6343C10661E6, 0xF43B45BA2F0E9B6F,
+	0xF4520439753A6281, 0xF45A6784F587C72F, 0xF4646B69C5751095,
+	0xF468118CE32EE44E, 0xF478D8B39716DD6D, 0xF4B6415946FC16CF,
+	0xF4CBE92CB392ED12, 0xF4D89C083F34930D, 0xF523730199E3EE93,
+	0xF5360FBE2BF1691D, 0xF5363349DBF9D21B, 0xF568D51E7E49BA1E,
+	0xF5733C6717A3973A, 0xF5C214038FCA0710, 0xF5C5866D052713D9,
+	0xF611F4BAC584135C, 0xF63B89CE4582D57D, 0xF6621BFB186D11A6,
+	0xF667DC0486510A81, 0xF6E3494AE4EC8933, 0xF774EAEEF0D8B13E,
+	0xF795ACE18DEDE03C, 0xF7B1C8E870536D3E, 0xF7DF7D0DED52018F,
+	0xF7F52DB82195E636, 0xF7FE28F6C3F2ACC3, 0xF8009DB06B291823,
+	0xF828DF21C5E83F66, 0xF82C85BEDEB717E2, 0xF82DD3778C3FB347,
+	0xF8B1C7C71EFCA431, 0xF908CA4C36464327, 0xF96E28F7421A4285,
+	0xF9D411E37CB29BC0, 0xF9F75B92AFEC042B, 0xF9FC3090FF014EC2,
+	0xFA5A3DFFB4C9CDB9, 0xFA7D393597AC54FC, 0xFA8C4571BBE7F9C0,
+	0xFAB972E41CB0882B, 0xFB315F957786CBFB, 0xFB3C48D08D28F69F,
+	0xFB610592898A9705, 0xFBB9F1FA6BF88689, 0xFC051819A46A48F6,
+	0xFC70E27208FFE7AA, 0xFC74D4759A0278AB, 0xFC7797BF4A95E83C,
+	0xFCB2955BB302626D, 0xFCBCCB2172903C6B, 0xFCE0D79965316C54,
+	0xFD2FC8753BD10D89, 0xFD61BB45FBB51EB2, 0xFD6907F083CBC160,
+	0xFD73F7759724755A, 0xFD8F687542608FDC, 0xFDA245D2A74A3D47,
+	0xFDAA963CFDCCD971, 0xFDD248B2569A020E, 0xFE05840B9393320C,
+	0xFE16991946F54C2D, 0xFE24AC631B41AA17, 0xFE4B6B43081D29A7,
+	0xFE5DC5D4E1815BE5, 0xFE667A120D2195AD, 0xFE94E570E4873A9C,
+	0xFECE2B85331406D1, 0xFEE970104E94A9A0, 0xFEF9D364FBD6D06E,
+	0xFF0AC362F4EC09B3, 0xFF2F2FB4D161149A, 0xFF44EDC41AAE9213,
+	0xFF922478570B5673, 0xFFCAA7C168858537
 };
 
-const struct rom_entry_s rom_dat[1765] = {
-	/* Doctor V64 BIOS V1.21
+const struct rom_entry_s rom_dat[1766] = {
+	/* Doctor V64 BIOS V2.03 (Blue)
 	 * CRC: 00000000 00000000
 	 * Entry: 0 */
 	{
@@ -649,7 +649,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Z64 BIOS V1.08 (Ravemax Hack V1.00b)
+	/* Z64 BIOS V2.00b (Ravemax Hack)
 	 * CRC: 00000000 00005053
 	 * Entry: 1 */
 	{
@@ -748,7 +748,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.reference = 1,
 		.reference_entry = 1282
 	},
-	/* Mace - The Dark Age (U) [b3]
+	/* Mace - The Dark Age (U) [b4]
 	 * CRC: 022E6456 75BBB3C7
 	 * Entry: 10 */
 	{
@@ -762,7 +762,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.reference = 1,
 		.reference_entry = 1310
 	},
-	/* SRAM Manager V1.0 Beta (32Mbit) (PD) [a1]
+	/* SRAM Manager V1.0 Beta (32Mbit) (PD)
 	 * CRC: 029CAE05 2B8F9DF1
 	 * Entry: 12 */
 	{
@@ -909,7 +909,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 22 */
 	{
 		.reference = 1,
-		.reference_entry = 1682
+		.reference_entry = 1683
 	},
 	/* Ogre Battle 64 - Person of Lordly Caliber (J) (V1.1) [!]
 	 * CRC: 0375CF67 56A93FAA
@@ -975,7 +975,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* 2 Blokes & An Armchair - Nintendo 64 Remix Remix by Tesko (PD) 
+	/* 2 Blokes & An Armchair - Nintendo 64 Remix Remix by Tesko (PD)
 	 * CRC: 04815914 87141455
 	 * Entry: 27 */
 	{
@@ -996,21 +996,21 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 28 */
 	{
 		.reference = 1,
-		.reference_entry = 1543
+		.reference_entry = 1544
 	},
 	/* Earthworm Jim 3D (U) [t1]
 	 * CRC: 0484CD98 1AFE0B59
 	 * Entry: 29 */
 	{
 		.reference = 1,
-		.reference_entry = 1543
+		.reference_entry = 1544
 	},
 	/* Earthworm Jim 3D (U) [f1] (PAL)
 	 * CRC: 04853364 948ACF82
 	 * Entry: 30 */
 	{
 		.reference = 1,
-		.reference_entry = 1543
+		.reference_entry = 1544
 	},
 	/* Duke Nukem - ZER0 H0UR (U) [!]
 	 * CRC: 04DAF07F 0D18E688
@@ -1138,7 +1138,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Killer Instinct Gold (U) (V1.0) [b1][t1]
+	/* Killer Instinct Gold (U) (V1.0) [t1]
 	 * CRC: 06CB44B7 3163DB94
 	 * Entry: 40 */
 	{
@@ -1152,7 +1152,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.reference = 1,
 		.reference_entry = 1123
 	},
-	/* F-ZERO X (J) [b1]
+	/* F-ZERO X (J) [b3]
 	 * CRC: 076C5C15 BDA9D062
 	 * Entry: 42 */
 	{
@@ -1283,7 +1283,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 51 */
 	{
 		.reference = 1,
-		.reference_entry = 1545
+		.reference_entry = 1546
 	},
 	/* Dynamix Intro by Widget and Immortal (PD)
 	 * CRC: 086E91C9 89F47C51
@@ -1393,7 +1393,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 59 */
 	{
 		.reference = 1,
-		.reference_entry = 1705
+		.reference_entry = 1706
 	},
 	/* Rush 2 - Extreme Racing USA (E) (M6) [h1I]
 	 * CRC: 09A0A6E5 8396630D
@@ -1434,7 +1434,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Mission Impossible (U) [b2]
+	/* Mission Impossible (U) [f1] (PAL)
 	 * CRC: 09D4D757 F2775DBD
 	 * Entry: 63 */
 	{
@@ -1585,12 +1585,12 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Castlevania (U) (V1.0) [t1]
+	/* Castlevania (U) (V1.0) [t3]
 	 * CRC: 0B28EBA3 5E062616
 	 * Entry: 73 */
 	{
 		.reference = 1,
-		.reference_entry = 1682
+		.reference_entry = 1683
 	},
 	/* F-ZERO X (U) [f2] (GameShark)
 	 * CRC: 0B46D03D 5FFAE173
@@ -1666,7 +1666,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 80 */
 	{
 		.reference = 1,
-		.reference_entry = 1513
+		.reference_entry = 1514
 	},
 	/* Major League Baseball Featuring Ken Griffey Jr. (U) [b2]
 	 * CRC: 0BFC12D9 1B377DA7
@@ -2199,7 +2199,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Fogworld USA Demo by Horizon64 (PD) [h1C][o1]
+	/* Fogworld USA Demo by Horizon64 (PD)
 	 * CRC: 11C646E7 4D86C048
 	 * Entry: 117 */
 	{
@@ -2229,7 +2229,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.reference = 1,
 		.reference_entry = 20
 	},
-	/* GameBooster 64 V1.1 (NTSC) (Unl)
+	/* GameBooster 64 V1.1 (PAL) (Unl)
 	 * CRC: 12678830 4E5AE439
 	 * Entry: 120 */
 	{
@@ -2431,7 +2431,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 134 */
 	{
 		.reference = 1,
-		.reference_entry = 1671
+		.reference_entry = 1672
 	},
 	/* NFL Blitz 2000 (U) (V1.0) [!]
 	 * CRC: 15A00969 34E5A285
@@ -2523,14 +2523,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 142 */
 	{
 		.reference = 1,
-		.reference_entry = 1659
+		.reference_entry = 1660
 	},
 	/* Tonic Trouble (U) (V1.1) [t1]
 	 * CRC: 1671F4A0 5C0E7928
 	 * Entry: 143 */
 	{
 		.reference = 1,
-		.reference_entry = 1659
+		.reference_entry = 1660
 	},
 	/* Quake 64 (E) [!]
 	 * CRC: 16931D74 65DC6D34
@@ -2548,7 +2548,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Banjo-Kazooie (U) (V1.0) [b4]
+	/* Banjo-Kazooie (U) (V1.0) [t1]
 	 * CRC: 16EDC447 B291F183
 	 * Entry: 145 */
 	{
@@ -2576,7 +2576,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 147 */
 	{
 		.reference = 1,
-		.reference_entry = 1694
+		.reference_entry = 1695
 	},
 	/* Kobe Bryant in NBA Courtside (E) [!]
 	 * CRC: 1739EFBA D0B43A68
@@ -2617,7 +2617,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Banjo to Kazooie no Daibouken (J) [f1]
+	/* Banjo to Kazooie no Daibouken (J) [f2]
 	 * CRC: 18439105 60424C9E
 	 * Entry: 151 */
 	{
@@ -2819,7 +2819,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* T-Shirt Demo by Neptune and Steve (POM '98) (PD) [b1]
+	/* T-Shirt Demo by Neptune and Steve (POM '98) (PD)
 	 * CRC: 1AA71519 51360D55
 	 * Entry: 167 */
 	{
@@ -2867,7 +2867,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Spacer by Memir (POM '99) (PD) [t1]
+	/* Spacer by Memir (POM '99) (PD) [t2]
 	 * CRC: 1B6FAB59 99199038
 	 * Entry: 170 */
 	{
@@ -3030,7 +3030,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 10,
 	},
-	/* Mario Golf (E) [f1] (Z64-Save)
+	/* Mario Golf (E) [f2] (Z64-Save)
 	 * CRC: 1D82BE21 7EF19C9A
 	 * Entry: 183 */
 	{
@@ -3074,7 +3074,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 186 */
 	{
 		.reference = 1,
-		.reference_entry = 1648
+		.reference_entry = 1649
 	},
 	/* Brunswick Circuit Pro Bowling (U) [!]
 	 * CRC: 1E22CF2E 42AAC813
@@ -3147,7 +3147,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Donkey Kong 64 (E) [f1] (Boot&Save)
+	/* Donkey Kong 64 (E) [f1] (Save)
 	 * CRC: 1F95CAAA 047FC22A
 	 * Entry: 192 */
 	{
@@ -3353,7 +3353,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Doctor V64 BIOS V1.01
+	/* Doctor V64 BIOS V1.31
 	 * CRC: 204F4E4C 59000000
 	 * Entry: 206 */
 	{
@@ -3649,12 +3649,12 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Hoshi no Kirby 64 (J) (V1.0) [f1]
+	/* Kirby 64 - The Crystal Shards (U) [b2]
 	 * CRC: 22F301B6 D0A03C3C
 	 * Entry: 229 */
 	{
 		.reference = 1,
-		.reference_entry = 1336
+		.reference_entry = 476
 	},
 	/* Yoshi's Story (U) (M2) [!]
 	 * CRC: 2337D8E8 6B8E7CEC
@@ -3805,7 +3805,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* GT Demo (PD) [a1]
+	/* GT Demo (PD)
 	 * CRC: 2575EF19 D13D2A2C
 	 * Entry: 241 */
 	{
@@ -3929,7 +3929,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.reference = 1,
 		.reference_entry = 745
 	},
-	/* Pamela Demo (PD)
+	/* Pamela Demo - Resized (PD)
 	 * CRC: 26AD85C5 F908A36B
 	 * Entry: 251 */
 	{
@@ -4195,7 +4195,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 269 */
 	{
 		.reference = 1,
-		.reference_entry = 1495
+		.reference_entry = 1496
 	},
 	/* NHL 99 (E) [!]
 	 * CRC: 287D601E ABF4F8AE
@@ -4401,7 +4401,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Clay Fighter 63 1-3 (Beta) [!]
+	/* Clay Fighter 63 1-3 (Beta) [b1]
 	 * CRC: 2B6FA7C0 09A71225
 	 * Entry: 285 */
 	{
@@ -4548,7 +4548,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 295 */
 	{
 		.reference = 1,
-		.reference_entry = 1558
+		.reference_entry = 1559
 	},
 	/* Mario Artist: Polygon Studio (J) [CART HACK]
 	 * CRC: 2D5EFCC5 98CF79D2
@@ -4635,7 +4635,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 301 */
 	{
 		.reference = 1,
-		.reference_entry = 1546
+		.reference_entry = 1547
 	},
 	/* Chopper Attack (E) [!]
 	 * CRC: 2E359339 3FA5EDA6
@@ -4765,7 +4765,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Turok - Dinosaur Hunter (E) (V1.1) [!]
+	/* Turok - Dinosaur Hunter (U) (V1.1) [!]
 	 * CRC: 2F700DCD 176CC5C9
 	 * Entry: 310 */
 	{
@@ -4841,7 +4841,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 315 */
 	{
 		.reference = 1,
-		.reference_entry = 1546
+		.reference_entry = 1547
 	},
 	/* Alleycat 64 by Dosin (POM '99) (PD)
 	 * CRC: 306B3375 05F4E698
@@ -4905,13 +4905,13 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Fractal Zoomer Demo by RedboX (PD)
+	/* Mandelbrot Zoomer by RedBox (PD)
 	 * CRC: 30E6FE79 3EEA5386
 	 * Entry: 321 */
 	{
-		.status = 0,
+		.status = 3,
 		.save_type = SAVE_NONE,
-		.players = 4,
+		.players = 0,
 		.rumble = 1,
 		.transferpak = 0,
 		.mempak = 1,
@@ -5004,7 +5004,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 328 */
 	{
 		.reference = 1,
-		.reference_entry = 1549
+		.reference_entry = 1550
 	},
 	/* Bust-A-Move 2 - Arcade Edition (U) [b3]
 	 * CRC: 322EF540 38D316EB
@@ -5112,7 +5112,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 337 */
 	{
 		.reference = 1,
-		.reference_entry = 1644
+		.reference_entry = 1645
 	},
 	/* WWF - War Zone (E) [!]
 	 * CRC: 33A275A4 B8504459
@@ -5146,7 +5146,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Super Smash Bros. (U) [f1]
+	/* Super Smash Bros. (U) [f3]
 	 * CRC: 3409CEB6 CEC8517A
 	 * Entry: 340 */
 	{
@@ -5190,7 +5190,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 343 */
 	{
 		.reference = 1,
-		.reference_entry = 1543
+		.reference_entry = 1544
 	},
 	/* ObjectVIEWER V1.1 by Kid Stardust (PD)
 	 * CRC: 34E42466 F50868AC
@@ -5220,7 +5220,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 346 */
 	{
 		.reference = 1,
-		.reference_entry = 1558
+		.reference_entry = 1559
 	},
 	/* Rally '99 (J) [!]
 	 * CRC: 35D9BA0C DF485586
@@ -5259,9 +5259,9 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 349 */
 	{
 		.reference = 1,
-		.reference_entry = 1644
+		.reference_entry = 1645
 	},
-	/* 1080 Snowboarding (JU) (M2) [ba]
+	/* 1080 Snowboarding (JU) (M2) [h1C]
 	 * CRC: 35F53383 0C8D0AE4
 	 * Entry: 350 */
 	{
@@ -5312,7 +5312,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 354 */
 	{
 		.reference = 1,
-		.reference_entry = 1565
+		.reference_entry = 1566
 	},
 	/* Yoshi Story (J) [t1]
 	 * CRC: 369B314B E7780D04
@@ -5438,7 +5438,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 363 */
 	{
 		.reference = 1,
-		.reference_entry = 1694
+		.reference_entry = 1695
 	},
 	/* Twintris by Twinsen (POM '98) (PD)
 	 * CRC: 37B8F920 A58BB3EF
@@ -5493,7 +5493,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 367 */
 	{
 		.reference = 1,
-		.reference_entry = 1729
+		.reference_entry = 1730
 	},
 	/* Pokemon Snap (U) [f2] (Save-PAL)
 	 * CRC: 38186DAF 232AE3D8
@@ -5743,14 +5743,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 386 */
 	{
 		.reference = 1,
-		.reference_entry = 1575
+		.reference_entry = 1576
 	},
 	/* Baku Bomberman (J) [t1]
 	 * CRC: 3A595B0E F8788AA6
 	 * Entry: 387 */
 	{
 		.reference = 1,
-		.reference_entry = 1566
+		.reference_entry = 1567
 	},
 	/* Mario Tennis 64 (J) [!]
 	 * CRC: 3A6C42B5 1ACADA1B
@@ -6015,7 +6015,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.reference = 1,
 		.reference_entry = 908
 	},
-	/* Buck Bumble (U) [b1][t1]
+	/* Buck Bumble (U) [t1]
 	 * CRC: 3C2B07FC 8C6AC97B
 	 * Entry: 405 */
 	{
@@ -6297,14 +6297,14 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Midway's Greatest Arcade Hits Volume 1 (U) [b2]
+	/* Midway's Greatest Arcade Hits Volume 1 (U) [t1]
 	 * CRC: 3F462D42 93AE9238
 	 * Entry: 426 */
 	{
 		.reference = 1,
-		.reference_entry = 1579
+		.reference_entry = 1580
 	},
-	/* AeroGauge (J) (V1.0) (Kiosk Demo) [b1]
+	/* AeroGauge (J) (V1.0) (Kiosk Demo) [b4]
 	 * CRC: 3F47EEA0 5DDF7A3C
 	 * Entry: 427 */
 	{
@@ -6327,7 +6327,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Duke Nukem 64 (U) [b1]
+	/* Duke Nukem 64 (U) [t2]
 	 * CRC: 3F84EB47 141964BF
 	 * Entry: 429 */
 	{
@@ -6424,7 +6424,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 437 */
 	{
 		.reference = 1,
-		.reference_entry = 1634
+		.reference_entry = 1635
 	},
 	/* Puzzle Bobble 64 (J) [f2] (PAL)
 	 * CRC: 412E02B8 51A57E8E
@@ -6511,7 +6511,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.reference = 1,
 		.reference_entry = 1283
 	},
-	/* Textlight Demo by Horizon64 (PD) [b1]
+	/* Textlight Demo by Horizon64 (PD)
 	 * CRC: 41B1BF58 A1EB9BB7
 	 * Entry: 445 */
 	{
@@ -6596,7 +6596,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 450 */
 	{
 		.reference = 1,
-		.reference_entry = 1667
+		.reference_entry = 1668
 	},
 	/* Doom 64 (U) (V1.1) [!]
 	 * CRC: 423E96F4 CE88F05B
@@ -6685,7 +6685,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.reference = 1,
 		.reference_entry = 847
 	},
-	/* CD64 BIOS EEPROM-Burner V1.11 (Even Bytes)
+	/* CD64 BIOS EEPROM-Burner V1.30 (Even Bytes)
 	 * CRC: 43362020 20202020
 	 * Entry: 457 */
 	{
@@ -6786,7 +6786,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* CD64 BIOS EEPROM-Burner V1.11 (Odd Bytes)
+	/* CD64 BIOS EEPROM-Burner V1.23 (Odd Bytes)
 	 * CRC: 44342020 20202056
 	 * Entry: 465 */
 	{
@@ -6960,7 +6960,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Mario Kart 64 (U) [t1]
+	/* Mario Kart 64 (U) [t4]
 	 * CRC: 465035CA C6DE1A09
 	 * Entry: 477 */
 	{
@@ -7041,7 +7041,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 484 */
 	{
 		.reference = 1,
-		.reference_entry = 1667
+		.reference_entry = 1668
 	},
 	/* Tom Clancy's Rainbow Six (F) [!]
 	 * CRC: 486BF335 034DCC81
@@ -7467,7 +7467,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 514 */
 	{
 		.reference = 1,
-		.reference_entry = 1699
+		.reference_entry = 1700
 	},
 	/* Rugrats - Treasure Hunt (E) [!]
 	 * CRC: 4D3ADFDA 7598FCAE
@@ -7540,7 +7540,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.reference = 1,
 		.reference_entry = 417
 	},
-	/* Automobili Lamborghini (U) [b1]
+	/* Automobili Lamborghini (U) [b2]
 	 * CRC: 4DB05DC4 28DBF801
 	 * Entry: 520 */
 	{
@@ -7563,7 +7563,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Memory Manager V1.0b by R. Bubba Magillicutty (PD)
+	/* SRAM Manager V1.0 PAL Beta (PD)
 	 * CRC: 4DEC9986 A8904450
 	 * Entry: 522 */
 	{
@@ -7602,7 +7602,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.reference = 1,
 		.reference_entry = 237
 	},
-	/* Doraemon 2 - Nobita to Hikari no Shinden (J) [b2]
+	/* Doraemon 2 - Nobita to Hikari no Shinden (J) [f2]
 	 * CRC: 4E30BD3A B77D6DFB
 	 * Entry: 525 */
 	{
@@ -7740,7 +7740,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 535 */
 	{
 		.reference = 1,
-		.reference_entry = 1575
+		.reference_entry = 1576
 	},
 	/* Kakutou Denshou - F-Cup Maniax (J) [!]
 	 * CRC: 4F29474F 30CB707A
@@ -8008,14 +8008,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 554 */
 	{
 		.reference = 1,
-		.reference_entry = 1648
+		.reference_entry = 1649
 	},
 	/* PGA European Tour (E) (M5) [f1] (NTSC)
 	 * CRC: 5243B915 BE7743B1
 	 * Entry: 555 */
 	{
 		.reference = 1,
-		.reference_entry = 1650
+		.reference_entry = 1651
 	},
 	/* Re-Volt (U) [f1] (Country Check)
 	 * CRC: 529AA985 A85509A3
@@ -8219,7 +8219,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 570 */
 	{
 		.reference = 1,
-		.reference_entry = 1581
+		.reference_entry = 1582
 	},
 	/* GoldenEye 007 (E) [t1] (Rapid Fire)
 	 * CRC: 540F359D FF327745
@@ -8315,7 +8315,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Z64 BIOS V1.05
+	/* Z64 BIOS V1.07
 	 * CRC: 551E06B4 02CD16A8
 	 * Entry: 578 */
 	{
@@ -8352,7 +8352,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 580 */
 	{
 		.reference = 1,
-		.reference_entry = 1648
+		.reference_entry = 1649
 	},
 	/* Doraemon - Nobita to 3tsu no Seireiseki (J) [t1]
 	 * CRC: 55C0515C 901DA4A7
@@ -8538,7 +8538,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 595 */
 	{
 		.reference = 1,
-		.reference_entry = 1697
+		.reference_entry = 1698
 	},
 	/* Pocket Monsters Stadium (J) [b2]
 	 * CRC: 58FBD28F FEB595F0
@@ -8614,7 +8614,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 602 */
 	{
 		.reference = 1,
-		.reference_entry = 1716
+		.reference_entry = 1717
 	},
 	/* Major League Baseball Featuring Ken Griffey Jr. (E) [b1]
 	 * CRC: 59F34558 0C3130E4
@@ -8715,7 +8715,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.reference = 1,
 		.reference_entry = 669
 	},
-	/* 007 - The World is Not Enough (U) [t1]
+	/* 007 - The World is Not Enough (U) [t1][f1] (PAL-NTSC)
 	 * CRC: 5B6AC01B 8D1A562A
 	 * Entry: 612 */
 	{
@@ -8807,7 +8807,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* GBlator for NTSC Dr V64 (PD)
+	/* GameBooster 64 V1.1 (NTSC) (Unl) [f1]
 	 * CRC: 5C1AAD1C AF7BF297
 	 * Entry: 620 */
 	{
@@ -8922,7 +8922,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 628 */
 	{
 		.reference = 1,
-		.reference_entry = 1576
+		.reference_entry = 1577
 	},
 	/* GBlator for PAL Dr V64 (PD)
 	 * CRC: 5D0F8DD2 990BE538
@@ -8993,7 +8993,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 633 */
 	{
 		.reference = 1,
-		.reference_entry = 1457
+		.reference_entry = 1458
 	},
 	/* Rampage 2 - Universal Tour (E) [!]
 	 * CRC: 5DFC4249 99529C07
@@ -9263,7 +9263,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Harvest Moon 64 (U) [t1]
+	/* Harvest Moon 64 (U) [t1][f1] (PAL-NTSC)
 	 * CRC: 60CC9644 C62AE877
 	 * Entry: 653 */
 	{
@@ -9632,7 +9632,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 678 */
 	{
 		.reference = 1,
-		.reference_entry = 1496
+		.reference_entry = 1497
 	},
 	/* Pip's Tic Tak Toe by Mark Pips (PD)
 	 * CRC: 6459533B 7E22B56C
@@ -9742,7 +9742,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 686 */
 	{
 		.reference = 1,
-		.reference_entry = 1542
+		.reference_entry = 1543
 	},
 	/* Blast Dozer (J) [!]
 	 * CRC: 65234451 EBD3346F
@@ -9765,7 +9765,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 688 */
 	{
 		.reference = 1,
-		.reference_entry = 1535
+		.reference_entry = 1536
 	},
 	/* NEO Myth N64 Menu Demo V0.1 (PD)
 	 * CRC: 6539E529 1FE8CE01
@@ -9939,7 +9939,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.reference = 1,
 		.reference_entry = 309
 	},
-	/* Turok - Dinosaur Hunter (G) (V1.1)
+	/* Turok - Dinosaur Hunter (G) (V1.2)
 	 * CRC: 665FC793 6934A73B
 	 * Entry: 702 */
 	{
@@ -10329,7 +10329,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 730 */
 	{
 		.reference = 1,
-		.reference_entry = 1635
+		.reference_entry = 1636
 	},
 	/* Mempack to N64 Uploader by Destop V1.0 (PD)
 	 * CRC: 6A097D8B F999048C
@@ -10478,7 +10478,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 741 */
 	{
 		.reference = 1,
-		.reference_entry = 1505
+		.reference_entry = 1506
 	},
 	/* CD64 BIOS Direct-Upgrade V1.30
 	 * CRC: 6BF11774 D330D7ED
@@ -10549,7 +10549,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 746 */
 	{
 		.reference = 1,
-		.reference_entry = 1727
+		.reference_entry = 1728
 	},
 	/* WWF No Mercy (U) (V1.1) [!]
 	 * CRC: 6C80F13B 427EDEAA
@@ -10654,7 +10654,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Famista 64 (J) [!]
+	/* Famista 64 (J) [b5]
 	 * CRC: 6DFF4C37 B1B763FD
 	 * Entry: 754 */
 	{
@@ -10664,7 +10664,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.rumble = 1,
 		.transferpak = 0,
 		.mempak = 1,
-		.biopak = 1,
+		.biopak = 0,
 		.count_per_op = 2,
 		.disable_extra_mem = 0,
 		.si_dma_duration = 0,
@@ -10753,7 +10753,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 761 */
 	{
 		.reference = 1,
-		.reference_entry = 1546
+		.reference_entry = 1547
 	},
 	/* Neon64 V1.2 by Halley's Comet Software (PD) [o1]
 	 * CRC: 7040B082 1BE98D03
@@ -10820,7 +10820,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 768 */
 	{
 		.reference = 1,
-		.reference_entry = 1577
+		.reference_entry = 1578
 	},
 	/* N64 Stars Demo (PD) [b1]
 	 * CRC: 71255651 C6AE0EA6
@@ -11368,7 +11368,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 809 */
 	{
 		.reference = 1,
-		.reference_entry = 1650
+		.reference_entry = 1651
 	},
 	/* Dexanoid R1 by Protest Design (PD)
 	 * CRC: 76712159 35666812
@@ -11391,7 +11391,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 811 */
 	{
 		.reference = 1,
-		.reference_entry = 1540
+		.reference_entry = 1541
 	},
 	/* S.C.A.R.S. (U) [!]
 	 * CRC: 769147F3 2033C10E
@@ -11425,7 +11425,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Ken Griffey Jr.'s Slugfest (U) [b1]
+	/* Ken Griffey Jr.'s Slugfest (U) [f2] (PAL)
 	 * CRC: 76A8C9F4 3391893D
 	 * Entry: 814 */
 	{
@@ -11469,7 +11469,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.reference = 1,
 		.reference_entry = 1417
 	},
-	/* Hard Coded Demo by Silo and Fractal (PD) [a1]
+	/* Hard Coded Demo by Silo and Fractal (PD)
 	 * CRC: 775AFA9C 0EB52EF6
 	 * Entry: 819 */
 	{
@@ -11625,12 +11625,12 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Mystical Ninja Starring Goemon (U) [t1]
+	/* Mystical Ninja Starring Goemon (U) [t1][h2C]
 	 * CRC: 7AADA8DD 94DAB468
 	 * Entry: 831 */
 	{
 		.reference = 1,
-		.reference_entry = 1740
+		.reference_entry = 1741
 	},
 	/* Jinsei Game 64 (J) [f1] (PAL)
 	 * CRC: 7B016055 F8AC6092
@@ -11735,7 +11735,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Pause Demo by RedboX (PD)
+	/* Plasma Demo (PD) [a1]
 	 * CRC: 7D1727F1 6C6B83EB
 	 * Entry: 839 */
 	{
@@ -11767,7 +11767,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Chameleon Twist 2 (J) [b2]
+	/* Chameleon Twist 2 (J) [t1]
 	 * CRC: 7D5772F8 3A6785EF
 	 * Entry: 841 */
 	{
@@ -12191,7 +12191,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.reference = 1,
 		.reference_entry = 834
 	},
-	/* Shadow Man (U) [b3]
+	/* Shadow Man (U) [t1]
 	 * CRC: 82342320 BC65A550
 	 * Entry: 872 */
 	{
@@ -12320,14 +12320,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 882 */
 	{
 		.reference = 1,
-		.reference_entry = 1697
+		.reference_entry = 1698
 	},
 	/* Mystical Ninja Starring Goemon (E) [t1]
 	 * CRC: 835B97A2 FF6C0060
 	 * Entry: 883 */
 	{
 		.reference = 1,
-		.reference_entry = 1700
+		.reference_entry = 1701
 	},
 	/* Mario Tennis (E) [!]
 	 * CRC: 839F3AD5 406D15FA
@@ -12382,7 +12382,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 887 */
 	{
 		.reference = 1,
-		.reference_entry = 1734
+		.reference_entry = 1735
 	},
 	/* Mortal Kombat Trilogy (U) (V1.2) [t1] (Hit Anywhere)
 	 * CRC: 83F33AA9 2649847A
@@ -12423,7 +12423,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Y2K Demo by WT_Riker (PD) [b1]
+	/* Y2K Demo by WT_Riker (PD)
 	 * CRC: 83F9F2CB E7BC4744
 	 * Entry: 891 */
 	{
@@ -12572,19 +12572,19 @@ const struct rom_entry_s rom_dat[1765] = {
 		.reference = 1,
 		.reference_entry = 997
 	},
-	/* Knife Edge - Nose Gunner (U) [b1][t1]
+	/* Knife Edge - Nose Gunner (U) [hI][t1]
 	 * CRC: 84F5C897 A870AC11
 	 * Entry: 902 */
 	{
 		.reference = 1,
-		.reference_entry = 1741
+		.reference_entry = 1742
 	},
 	/* Knife Edge - Nose Gunner (U) [hI]
 	 * CRC: 84F5CF63 08EE7EDC
 	 * Entry: 903 */
 	{
 		.reference = 1,
-		.reference_entry = 1741
+		.reference_entry = 1742
 	},
 	/* Snobow Kids (J) [!]
 	 * CRC: 84FC04FF B1253CE9
@@ -12607,14 +12607,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 905 */
 	{
 		.reference = 1,
-		.reference_entry = 1745
+		.reference_entry = 1746
 	},
 	/* Jet Force Gemini (U) (Kiosk Demo) [b1][f2]
 	 * CRC: 8547FED3 C4945FAF
 	 * Entry: 906 */
 	{
 		.reference = 1,
-		.reference_entry = 1547
+		.reference_entry = 1548
 	},
 	/* Rat Attack (E) (M6) [f1] (NTSC)
 	 * CRC: 85670AB4 3834BE8A
@@ -12667,7 +12667,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 911 */
 	{
 		.reference = 1,
-		.reference_entry = 1457
+		.reference_entry = 1458
 	},
 	/* Donald Duck - Quack Attack (E) (M5) [b1]
 	 * CRC: 85E42D70 132BD5C2
@@ -12722,7 +12722,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Paperboy (U) [hI][t1]
+	/* Paperboy (U) [t1]
 	 * CRC: 8632071E 637E1042
 	 * Entry: 917 */
 	{
@@ -12734,14 +12734,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 918 */
 	{
 		.reference = 1,
-		.reference_entry = 1539
+		.reference_entry = 1540
 	},
 	/* Destruction Derby 64 (U) [f1] (PAL)
 	 * CRC: 8637C692 CAD23999
 	 * Entry: 919 */
 	{
 		.reference = 1,
-		.reference_entry = 1539
+		.reference_entry = 1540
 	},
 	/* Ready 2 Rumble Boxing (E) (M3) [t1] (P1 Untouchable)
 	 * CRC: 8638A334 8EBF1508
@@ -12821,7 +12821,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Yoshi's Story (U) (M2) [b2]
+	/* Yoshi's Story (U) (M2) [t1]
 	 * CRC: 88047F1D 3B837D28
 	 * Entry: 926 */
 	{
@@ -13010,7 +13010,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 942 */
 	{
 		.reference = 1,
-		.reference_entry = 1671
+		.reference_entry = 1672
 	},
 	/* BattleTanx - Global Assault (U) [f1] (Country Check)
 	 * CRC: 8A2E80DC 00F61BE4
@@ -13132,7 +13132,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 953 */
 	{
 		.reference = 1,
-		.reference_entry = 1685
+		.reference_entry = 1686
 	},
 	/* Conker's Bad Fur Day (U) (Debug Version) [f1] (Decrypted)
 	 * CRC: 8BC3A47A 74221294
@@ -13394,7 +13394,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 975 */
 	{
 		.reference = 1,
-		.reference_entry = 1518
+		.reference_entry = 1519
 	},
 	/* Fire Demo by Lac (PD)
 	 * CRC: 8E248649 2E1CDE52
@@ -13737,7 +13737,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Brunswick Circuit Pro Bowling (U) [b1]
+	/* Brunswick Circuit Pro Bowling (U) [o1][f1] (PAL)
 	 * CRC: 91644B9F 8CDD0DA5
 	 * Entry: 999 */
 	{
@@ -13813,14 +13813,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 1004 */
 	{
 		.reference = 1,
-		.reference_entry = 1664
+		.reference_entry = 1665
 	},
 	/* Legend of Zelda, The - Ocarina of Time - Master Quest (U) (Debu
 	 * CRC: 917D1B16 831F9BE1
 	 * Entry: 1005 */
 	{
 		.reference = 1,
-		.reference_entry = 1664
+		.reference_entry = 1665
 	},
 	/* S.C.A.R.S. (E) (M3) [!]
 	 * CRC: 918E2D60 F865683E
@@ -13870,7 +13870,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* 1080 Snowboarding (JU) (M2) [b1]
+	/* 1080 Snowboarding (JU) (M2) [b6]
 	 * CRC: 92072A84 275952F8
 	 * Entry: 1009 */
 	{
@@ -13983,7 +13983,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 1018 */
 	{
 		.reference = 1,
-		.reference_entry = 1651
+		.reference_entry = 1652
 	},
 	/* Shadow Man (B)
 	 * CRC: 93A625B9 2D6022E6
@@ -14024,7 +14024,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.reference = 1,
 		.reference_entry = 597
 	},
-	/* The Corporation XMAS Demo '99 by TS_Garp (PD) [b1]
+	/* The Corporation XMAS Demo '99 by TS_Garp (PD)
 	 * CRC: 93DA8551 D231E8AB
 	 * Entry: 1022 */
 	{
@@ -14153,9 +14153,9 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 1032 */
 	{
 		.reference = 1,
-		.reference_entry = 1453
+		.reference_entry = 1454
 	},
-	/* U64 (Chrome) Demo by Horizon64 (PD) [b1]
+	/* U64 (Chrome) Demo by Horizon64 (older) (PD)
 	 * CRC: 95013CCC 73F7C072
 	 * Entry: 1033 */
 	{
@@ -14219,7 +14219,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Turok - Dinosaur Hunter (U) (V1.0) [t1]
+	/* Turok - Dinosaur Hunter (U) (V1.0) [t2]
 	 * CRC: 9542E183 B1D245E6
 	 * Entry: 1037 */
 	{
@@ -14286,7 +14286,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 1042 */
 	{
 		.reference = 1,
-		.reference_entry = 1528
+		.reference_entry = 1529
 	},
 	/* Tetris 64 (J) [!]
 	 * CRC: 963ADBA6 F7D5C89B
@@ -14407,7 +14407,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Game Boy 64 (POM '98) (PD) (Illegal Mode Enabled)
+	/* Game Boy 64 (POM '98) (PD)
 	 * CRC: 97FC2167 4616872B
 	 * Entry: 1051 */
 	{
@@ -14462,7 +14462,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.reference = 1,
 		.reference_entry = 1400
 	},
-	/* SRAM Upload Tool (PD)
+	/* SRAM Upload Tool V1.1 by Lac (PD) [b1]
 	 * CRC: 98A2BB11 EE4D4A86
 	 * Entry: 1055 */
 	{
@@ -14670,12 +14670,12 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Michael Owens WLS 2000 (E) [b2]
+	/* Michael Owens WLS 2000 (E) [f1] (NTSC)
 	 * CRC: 9ABC592A 2AA5DEE2
 	 * Entry: 1068 */
 	{
 		.reference = 1,
-		.reference_entry = 1567
+		.reference_entry = 1568
 	},
 	/* Resident Evil 2 (E) (M2) [!]
 	 * CRC: 9B500E8E E90550B3
@@ -14751,7 +14751,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 1075 */
 	{
 		.reference = 1,
-		.reference_entry = 1547
+		.reference_entry = 1548
 	},
 	/* Mario Party (E) (M3) [!]
 	 * CRC: 9C663069 80F24A80
@@ -14833,12 +14833,12 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Yoshi's Story (E) (M3) [b2][f1]
+	/* Yoshi's Story (U) (M2) [b1]
 	 * CRC: 9CB1BBB0 BC3439C7
 	 * Entry: 1081 */
 	{
 		.reference = 1,
-		.reference_entry = 1453
+		.reference_entry = 230
 	},
 	/* MAME 64 Demo (PD) [b1]
 	 * CRC: 9CCE5B1D 6351E283
@@ -14950,7 +14950,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* MMR by Count0 (PD) [b1]
+	/* MMR by Count0 (PD)
 	 * CRC: 9E6581AB 57CC8CED
 	 * Entry: 1090 */
 	{
@@ -15101,12 +15101,12 @@ const struct rom_entry_s rom_dat[1765] = {
 		.reference = 1,
 		.reference_entry = 66
 	},
-	/* Zelda no Densetsu - Toki no Ocarina (J) (V1.0) [f1]
+	/* Legend of Zelda, The - Ocarina of Time (U) (V1.0) [f2]
 	 * CRC: 9FD0987D 7EAE10D8
 	 * Entry: 1100 */
 	{
 		.reference = 1,
-		.reference_entry = 1637
+		.reference_entry = 1638
 	},
 	/* Rocket - Robot on Wheels (E) (M3) [!]
 	 * CRC: 9FD375F8 45F32DC8
@@ -15129,7 +15129,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 1102 */
 	{
 		.reference = 1,
-		.reference_entry = 1747
+		.reference_entry = 1748
 	},
 	/* Yuke Yuke!! Trouble Makers (J) [!]
 	 * CRC: 9FE6162D E97E4037
@@ -15239,7 +15239,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 1110 */
 	{
 		.reference = 1,
-		.reference_entry = 1498
+		.reference_entry = 1499
 	},
 	/* Madden Football 64 (E) [!]
 	 * CRC: A197CB52 7520DE0E
@@ -15301,21 +15301,21 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 1115 */
 	{
 		.reference = 1,
-		.reference_entry = 1576
+		.reference_entry = 1577
 	},
 	/* Snowboard Kids (U) [t1]
 	 * CRC: A1E78A63 022A67C9
 	 * Entry: 1116 */
 	{
 		.reference = 1,
-		.reference_entry = 1512
+		.reference_entry = 1513
 	},
 	/* Mortal Kombat Trilogy (U) (V1.0) [t4] (Hyper Mode)
 	 * CRC: A2015C11 C317ECAB
 	 * Entry: 1117 */
 	{
 		.reference = 1,
-		.reference_entry = 1498
+		.reference_entry = 1499
 	},
 	/* Pokemon Stadium (F) [!]
 	 * CRC: A23553A3 42BF2D39
@@ -15649,7 +15649,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.reference = 1,
 		.reference_entry = 1351
 	},
-	/* Wipeout 64 (U) [t1]
+	/* Wipeout 64 (U) [t2]
 	 * CRC: A6A99491 52B4E765
 	 * Entry: 1141 */
 	{
@@ -15849,7 +15849,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 1156 */
 	{
 		.reference = 1,
-		.reference_entry = 1674
+		.reference_entry = 1675
 	},
 	/* NHL Pro 99 (E) [!]
 	 * CRC: A9895CD9 7020016C
@@ -15966,7 +15966,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 1165 */
 	{
 		.reference = 1,
-		.reference_entry = 1606
+		.reference_entry = 1607
 	},
 	/* CD64 BIOS Direct-Upgrade V1.23
 	 * CRC: AAD9FC15 B2C9DA6F
@@ -16051,7 +16051,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 1172 */
 	{
 		.reference = 1,
-		.reference_entry = 1530
+		.reference_entry = 1531
 	},
 	/* 40 Winks (E) (M3) (Prototype)
 	 * CRC: ABA51D09 C668BAD9
@@ -16216,7 +16216,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 1184 */
 	{
 		.reference = 1,
-		.reference_entry = 1457
+		.reference_entry = 1458
 	},
 	/* NBA Pro 98 (E) [!]
 	 * CRC: ACDE962F B2CBF87F
@@ -16239,14 +16239,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 1186 */
 	{
 		.reference = 1,
-		.reference_entry = 1495
+		.reference_entry = 1496
 	},
 	/* Starshot - Space Circus Fever (E) (M3) [f2] (NTSC)
 	 * CRC: AD199971 1075F279
 	 * Entry: 1187 */
 	{
 		.reference = 1,
-		.reference_entry = 1495
+		.reference_entry = 1496
 	},
 	/* Mario Party (J) [!]
 	 * CRC: ADA815BE 6028622F
@@ -16285,7 +16285,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 1190 */
 	{
 		.reference = 1,
-		.reference_entry = 1495
+		.reference_entry = 1496
 	},
 	/* Namco Museum 64 (U) [o1][f1] (PAL)
 	 * CRC: AE21569D 5A5BC572
@@ -16558,16 +16558,16 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 1211 */
 	{
 		.reference = 1,
-		.reference_entry = 1716
+		.reference_entry = 1717
 	},
-	/* Nightmare Creatures (U) [t1]
+	/* Nightmare Creatures (U) [t2]
 	 * CRC: AFDCF850 5CCD80DE
 	 * Entry: 1212 */
 	{
 		.reference = 1,
 		.reference_entry = 264
 	},
-	/* Cruis'n World (E) [b2]
+	/* Cruis'n World (E) [f1]
 	 * CRC: AFF44E2D 2ECB9679
 	 * Entry: 1213 */
 	{
@@ -17090,7 +17090,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Bio F.R.E.A.K.S. (U) [b3]
+	/* Bio F.R.E.A.K.S. (U) [t1]
 	 * CRC: B6223A7B 2139CEA6
 	 * Entry: 1253 */
 	{
@@ -17171,7 +17171,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 1260 */
 	{
 		.reference = 1,
-		.reference_entry = 1651
+		.reference_entry = 1652
 	},
 	/* Tsumi to Batsu - Hoshi no Keishousha (J) [!]
 	 * CRC: B6BC0FB0 E3812198
@@ -17210,7 +17210,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 1263 */
 	{
 		.reference = 1,
-		.reference_entry = 1525
+		.reference_entry = 1526
 	},
 	/* NBA Jam 2000 (E) [!]
 	 * CRC: B6D0CAA0 E3F493C8
@@ -17332,7 +17332,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 1274 */
 	{
 		.reference = 1,
-		.reference_entry = 1455
+		.reference_entry = 1456
 	},
 	/* Rush 2 - Extreme Racing USA (E) (M6) [!]
 	 * CRC: B7CF2136 FA0AA715
@@ -17531,12 +17531,12 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Pocket Monsters Snap (J) [b1]
+	/* Pocket Monsters Snap (J) [f1]
 	 * CRC: BB2D10F8 B8ED4D23
 	 * Entry: 1289 */
 	{
 		.reference = 1,
-		.reference_entry = 1634
+		.reference_entry = 1635
 	},
 	/* Jeremy McGrath Supercross 2000 (U) [!]
 	 * CRC: BB30B1A5 FCF712CE
@@ -17625,7 +17625,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Star Wars - Shadows of the Empire (U) (V1.0) [b1]
+	/* Star Wars - Shadows of the Empire (U) (V1.0) [t1]
 	 * CRC: BC3C9F6C 93B3CB13
 	 * Entry: 1296 */
 	{
@@ -17701,7 +17701,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.reference = 1,
 		.reference_entry = 592
 	},
-	/* Duke Nukem - ZER0 H0UR (U) [b2]
+	/* Duke Nukem - ZER0 H0UR (U) [b3]
 	 * CRC: BCEAF9B7 F84FF876
 	 * Entry: 1303 */
 	{
@@ -17917,7 +17917,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.reference = 1,
 		.reference_entry = 713
 	},
-	/* Chopper Attack (U) [b4]
+	/* Chopper Attack (U) [t1]
 	 * CRC: BF5D6D65 3F4A9C03
 	 * Entry: 1321 */
 	{
@@ -18020,7 +18020,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* South Park - Chef's Luv Shack (E) [!]
+	/* South Park - Chef's Luv Shack (U) [!]
 	 * CRC: C00CA948 8E60D34B
 	 * Entry: 1328 */
 	{
@@ -18187,7 +18187,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Mystical Ninja 2 Starring Goemon (E) (M3) [hI]
+	/* Mystical Ninja 2 Starring Goemon (E) (M3) [t1]
 	 * CRC: C27F7CEC 85E0806F
 	 * Entry: 1339 */
 	{
@@ -18439,7 +18439,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Sample Demo by Florian (PD) [b1]
+	/* Sample Demo by Florian (PD)
 	 * CRC: C541EAB4 7397CB5F
 	 * Entry: 1357 */
 	{
@@ -18639,7 +18639,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 1372 */
 	{
 		.reference = 1,
-		.reference_entry = 1637
+		.reference_entry = 1638
 	},
 	/* Hot Wheels Turbo Racing (U) [!]
 	 * CRC: C7C98F8E 42145DDE
@@ -18836,7 +18836,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 1386 */
 	{
 		.reference = 1,
-		.reference_entry = 1686
+		.reference_entry = 1687
 	},
 	/* Japan Pro Golf Tour 64 (J) [CART HACK]
 	 * CRC: C99936D1 23D1D65D
@@ -18934,7 +18934,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* SNES 9X Alpha by Loom-Crazy Nation (PD) [f1] (V64BIOS1.91)
+	/* SNES 9X Alpha by Loom-Crazy Nation (PD)
 	 * CRC: CA69ECE5 13A88244
 	 * Entry: 1393 */
 	{
@@ -19014,7 +19014,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Star Fox 64 (U) (V1.0) [f2] (PAL)
+	/* Star Fox 64 (U) (V1.0) [t1]
 	 * CRC: CBD83828 6FDEBEDC
 	 * Entry: 1398 */
 	{
@@ -19232,21 +19232,21 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Magical Tetris Challenge (U) [b1][hI]
+	/* Magical Tetris Challenge (U) [hI]
 	 * CRC: CDCCFF87 1D76A49E
 	 * Entry: 1415 */
 	{
 		.reference = 1,
 		.reference_entry = 800
 	},
-	/* Donkey Kong 64 (U) [f1] (Save)
+	/* Donkey Kong 64 (U) [f2]
 	 * CRC: CE84793D 27ECC1AD
 	 * Entry: 1416 */
 	{
 		.reference = 1,
-		.reference_entry = 1636
+		.reference_entry = 1637
 	},
-	/* Wetrix (E) (M6) [!]
+	/* Wetrix (U) (M6) [!]
 	 * CRC: CEA8B54F 7F21D503
 	 * Entry: 1417 */
 	{
@@ -19267,7 +19267,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 1418 */
 	{
 		.reference = 1,
-		.reference_entry = 1636
+		.reference_entry = 1637
 	},
 	/* Bust-A-Move 2 - Arcade Edition (E) [!]
 	 * CRC: CEDCDE1E 513A0502
@@ -19285,7 +19285,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Friendship Demo by Renderman (PD) [b1]
+	/* Friendship Demo by Renderman (PD)
 	 * CRC: CEE5C8CD D3D85466
 	 * Entry: 1420 */
 	{
@@ -19345,7 +19345,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 1424 */
 	{
 		.reference = 1,
-		.reference_entry = 1454
+		.reference_entry = 1455
 	},
 	/* Pom Part 4 Demo (PD)
 	 * CRC: CFBEE39B 76F0A14A
@@ -19441,7 +19441,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Pip's Pong by Mr. Pips (PD) [b1]
+	/* Pip's Pong by Mr. Pips (PD)
 	 * CRC: D072CFE7 CE134788
 	 * Entry: 1432 */
 	{
@@ -19640,7 +19640,7 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Congratulations Demo for SPLiT by Widget and Immortal (PD) [b1]
+	/* Congratulations Demo for SPLiT by Widget and Immortal (PD)
 	 * CRC: D2B908C8 E0E73A1D
 	 * Entry: 1445 */
 	{
@@ -19677,7 +19677,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	 * Entry: 1447 */
 	{
 		.reference = 1,
-		.reference_entry = 1498
+		.reference_entry = 1499
 	},
 	/* CD64 BIOS Direct-Upgrade V1.20
 	 * CRC: D32264A1 989987EA
@@ -19711,16 +19711,23 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Snowboard Kids 2 (U) [f1] (PAL)
+	/* Snowboard Kids 2 (U) [f2] (PAL)
 	 * CRC: D3DF2FEE 8090B699
 	 * Entry: 1450 */
 	{
 		.reference = 1,
 		.reference_entry = 1014
 	},
+	/* Star Wars - Shadows of the Empire (U) (V1.2) [b2]
+	 * CRC: D3E792A5 05D39C97
+	 * Entry: 1451 */
+	{
+		.reference = 1,
+		.reference_entry = 521
+	},
 	/* Hey You, Pikachu! (U) [!]
 	 * CRC: D3F10E5D 052EA579
-	 * Entry: 1451 */
+	 * Entry: 1452 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -19736,14 +19743,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Kirby 64 - The Crystal Shards (U) [f1]
 	 * CRC: D3F52BA5 1258EDFE
-	 * Entry: 1452 */
+	 * Entry: 1453 */
 	{
 		.reference = 1,
 		.reference_entry = 476
 	},
 	/* Yoshi's Story (E) (M3) [!]
 	 * CRC: D3F97D49 6924135B
-	 * Entry: 1453 */
+	 * Entry: 1454 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_16KB,
@@ -19757,9 +19764,9 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Zelda no Densetsu - Toki no Ocarina (J) (V1.1) [!]
+	/* Legend of Zelda, The - Ocarina of Time (U) (V1.1) [!]
 	 * CRC: D43DA81F 021E1E19
-	 * Entry: 1454 */
+	 * Entry: 1455 */
 	{
 		.status = 4,
 		.save_type = SAVE_SRAM,
@@ -19771,11 +19778,11 @@ const struct rom_entry_s rom_dat[1765] = {
 		.count_per_op = 2,
 		.disable_extra_mem = 0,
 		.si_dma_duration = 0,
-		.cheat_lut = 0,
+		.cheat_lut = 7,
 	},
 	/* Mario Golf 64 (J) (V1.0) [!]
 	 * CRC: D48944D1 B0D93A0E
-	 * Entry: 1455 */
+	 * Entry: 1456 */
 	{
 		.status = 0,
 		.save_type = SAVE_SRAM,
@@ -19791,7 +19798,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Evek - V64jr Save Manager by WT_Riker (PD)
 	 * CRC: D49DFF90 8DB53A8C
-	 * Entry: 1456 */
+	 * Entry: 1457 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -19807,7 +19814,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* WCW Nitro (U) [!]
 	 * CRC: D4C45A1A F425B25E
-	 * Entry: 1457 */
+	 * Entry: 1458 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -19823,21 +19830,21 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Yoshi Story (J) [f4]
 	 * CRC: D4DD9982 FDBA7B67
-	 * Entry: 1458 */
+	 * Entry: 1459 */
 	{
 		.reference = 1,
 		.reference_entry = 298
 	},
 	/* Army Men - Sarge's Heroes (U) [b1]
 	 * CRC: D51CF20D 5534AF93
-	 * Entry: 1459 */
+	 * Entry: 1460 */
 	{
 		.reference = 1,
 		.reference_entry = 916
 	},
 	/* Donchan Puzzle Hanabi de Doon! (Aleck64)
 	 * CRC: D52FE29D 8EA6A759
-	 * Entry: 1460 */
+	 * Entry: 1461 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -19853,7 +19860,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Gauntlet Legends (E) [!]
 	 * CRC: D543BCD6 2BA5E256
-	 * Entry: 1461 */
+	 * Entry: 1462 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -19869,7 +19876,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Blues Brothers 2000 (E) (M6) [!]
 	 * CRC: D571C883 822D3FCF
-	 * Entry: 1462 */
+	 * Entry: 1463 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -19885,7 +19892,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Operation WinBack (E) (M5) [!]
 	 * CRC: D5898CAF 6007B65B
-	 * Entry: 1463 */
+	 * Entry: 1464 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -19901,7 +19908,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Buck Bumble (E) (M5) [!]
 	 * CRC: D5B2339C CABCCAED
-	 * Entry: 1464 */
+	 * Entry: 1465 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -19917,14 +19924,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Bust-A-Move 3 DX (E) [f2] (NTSC-Z64)
 	 * CRC: D5BDCD1D 393AFE43
-	 * Entry: 1465 */
+	 * Entry: 1466 */
 	{
 		.reference = 1,
-		.reference_entry = 1565
+		.reference_entry = 1566
 	},
 	/* MAME 64 Beta 3 (PD)
 	 * CRC: D5CA46C2 F8555155
-	 * Entry: 1466 */
+	 * Entry: 1467 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -19940,7 +19947,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Disney's Tarzan (E) [!]
 	 * CRC: D614E5BF A76DBCC1
-	 * Entry: 1467 */
+	 * Entry: 1468 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -19956,7 +19963,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Rockman Dash (J) [!]
 	 * CRC: D666593B D7A25C07
-	 * Entry: 1468 */
+	 * Entry: 1469 */
 	{
 		.status = 0,
 		.save_type = SAVE_FLASH_RAM,
@@ -19972,7 +19979,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Iggy's Reckin' Balls (E) [!]
 	 * CRC: D692CC5E EC58D072
-	 * Entry: 1469 */
+	 * Entry: 1470 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -19988,7 +19995,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* 77a by Count0 (POM '98) (PD)
 	 * CRC: D6D29529 D4EADEE4
-	 * Entry: 1470 */
+	 * Entry: 1471 */
 	{
 		.status = 1,
 		.save_type = SAVE_NONE,
@@ -20004,7 +20011,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Super Mario 64 - Shindou Edition (J) [!]
 	 * CRC: D6FBA4A8 6326AA2C
-	 * Entry: 1471 */
+	 * Entry: 1472 */
 	{
 		.status = 4,
 		.save_type = SAVE_EEPROM_4KB,
@@ -20020,7 +20027,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Madden NFL 2002 (U) [!]
 	 * CRC: D7134F8D C11A00B5
-	 * Entry: 1472 */
+	 * Entry: 1473 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20036,7 +20043,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* War Gods (E) [!]
 	 * CRC: D715CC70 271CF5D6
-	 * Entry: 1473 */
+	 * Entry: 1474 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20052,7 +20059,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Bottom of the 9th (U) [!]
 	 * CRC: D72FD14D 1FED32C4
-	 * Entry: 1474 */
+	 * Entry: 1475 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20068,7 +20075,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Top Gear Overdrive (U) [!]
 	 * CRC: D741CD80 ACA9B912
-	 * Entry: 1475 */
+	 * Entry: 1476 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -20084,7 +20091,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* DS1 Manager V1.1 by R. Bubba Magillicutty (PD)
 	 * CRC: D7484C2A 56CFF26D
-	 * Entry: 1476 */
+	 * Entry: 1477 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20100,7 +20107,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Bass Rush - ECOGEAR PowerWorm Championship (J) [!]
 	 * CRC: D76333AC 0CB6219D
-	 * Entry: 1477 */
+	 * Entry: 1478 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20116,7 +20123,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* F-ZERO X (U) [f1] (Sex V1.1 Hack)
 	 * CRC: D767D118 A1B07602
-	 * Entry: 1478 */
+	 * Entry: 1479 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20132,7 +20139,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Jikkyou Powerful Pro Yakyuu 4 (J) (V1.1) [!]
 	 * CRC: D7891F1C C3E43788
-	 * Entry: 1479 */
+	 * Entry: 1480 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20148,7 +20155,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Power League 64 (J) [!]
 	 * CRC: D7A6DCFA CCFEB6B7
-	 * Entry: 1480 */
+	 * Entry: 1481 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20164,7 +20171,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Buck Bumble (J) [!]
 	 * CRC: D7C762B6 F83D9642
-	 * Entry: 1481 */
+	 * Entry: 1482 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20180,21 +20187,21 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Pokemon Stadium (G) [f1]
 	 * CRC: D7F73553 1347659F
-	 * Entry: 1482 */
+	 * Entry: 1483 */
 	{
 		.reference = 1,
 		.reference_entry = 448
 	},
 	/* Doraemon 3 - Nobita no Machi SOS! (J) [f1] (PAL-NTSC)
 	 * CRC: D8059804 92739B11
-	 * Entry: 1483 */
+	 * Entry: 1484 */
 	{
 		.reference = 1,
 		.reference_entry = 1148
 	},
 	/* Chameleon Twist (U) (V1.1)
 	 * CRC: D81963C7 4271A3AA
-	 * Entry: 1484 */
+	 * Entry: 1485 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -20210,7 +20217,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* AeroGauge (E) (M3) [!]
 	 * CRC: D83045C8 F29D3A36
-	 * Entry: 1485 */
+	 * Entry: 1486 */
 	{
 		.status = 4,
 		.save_type = SAVE_EEPROM_4KB,
@@ -20226,7 +20233,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Nushi Tsuri 64 (J) (V1.0) [!]
 	 * CRC: D83BB920 CC406416
-	 * Entry: 1486 */
+	 * Entry: 1487 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20242,14 +20249,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Diddy Kong Racing (E) (M3) (V1.1) [f1] (Z64)
 	 * CRC: D84C17CA 13F8F651
-	 * Entry: 1487 */
+	 * Entry: 1488 */
 	{
 		.reference = 1,
 		.reference_entry = 601
 	},
 	/* Shadowgate 64 - Trials Of The Four Towers (E) [!]
 	 * CRC: D84EEA84 45B2F1B4
-	 * Entry: 1488 */
+	 * Entry: 1489 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20265,7 +20272,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Pip's Porn Pack 1 by Mr. Pips (PD)
 	 * CRC: D851B920 F3D6C0CE
-	 * Entry: 1489 */
+	 * Entry: 1490 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20281,14 +20288,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Chopper Attack (E) [t1]
 	 * CRC: D852E238 0E52A960
-	 * Entry: 1490 */
+	 * Entry: 1491 */
 	{
 		.reference = 1,
 		.reference_entry = 302
 	},
 	/* Bomberman Hero (E) [!]
 	 * CRC: D85C4E29 88E276AF
-	 * Entry: 1491 */
+	 * Entry: 1492 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -20304,21 +20311,21 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* WWF Attitude (U) [f1] (PAL)
 	 * CRC: D89261A9 B1A2C9AF
-	 * Entry: 1492 */
+	 * Entry: 1493 */
 	{
 		.reference = 1,
 		.reference_entry = 1446
 	},
 	/* Batman Beyond - Return of the Joker (U) [o1][t1]
 	 * CRC: D8928E46 965CE432
-	 * Entry: 1493 */
+	 * Entry: 1494 */
 	{
 		.reference = 1,
 		.reference_entry = 204
 	},
 	/* NFL Quarterback Club 98 (U) [!]
 	 * CRC: D89BE2F8 99C97ADF
-	 * Entry: 1494 */
+	 * Entry: 1495 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20334,7 +20341,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Starshot - Space Circus Fever (E) (M3) [!]
 	 * CRC: D89E0E55 B17AA99A
-	 * Entry: 1495 */
+	 * Entry: 1496 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -20350,7 +20357,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Telefoot Soccer 2000 (F) [!]
 	 * CRC: D9042FBB FCFF997C
-	 * Entry: 1496 */
+	 * Entry: 1497 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20366,7 +20373,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* All-Star Baseball '99 (E) [!]
 	 * CRC: D9EDD54D 6BB8E274
-	 * Entry: 1497 */
+	 * Entry: 1498 */
 	{
 		.status = 3,
 		.save_type = SAVE_NONE,
@@ -20382,7 +20389,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Mortal Kombat Trilogy (U) (V1.0) [!]
 	 * CRC: D9F75C12 A8859B59
-	 * Entry: 1498 */
+	 * Entry: 1499 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20398,49 +20405,49 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Mortal Kombat Trilogy (U) (V1.0) [t5] (2x Aggressor)
 	 * CRC: D9FECC50 D3AA8423
-	 * Entry: 1499 */
+	 * Entry: 1500 */
 	{
 		.reference = 1,
-		.reference_entry = 1498
+		.reference_entry = 1499
 	},
 	/* Castlevania (E) (M3) [t1]
 	 * CRC: DA0E5024 969ED261
-	 * Entry: 1500 */
+	 * Entry: 1501 */
 	{
 		.reference = 1,
 		.reference_entry = 684
 	},
 	/* Monaco Grand Prix (U) [f1] (PAL)
 	 * CRC: DA233397 FF46DF64
-	 * Entry: 1501 */
+	 * Entry: 1502 */
 	{
 		.reference = 1,
 		.reference_entry = 266
 	},
-	/* Bomberman Hero (U) [b2]
+	/* Bomberman Hero (U) [b3]
 	 * CRC: DA573DB9 9442D273
-	 * Entry: 1502 */
+	 * Entry: 1503 */
 	{
 		.reference = 1,
 		.reference_entry = 468
 	},
 	/* Dark Rift (U) [t1]
 	 * CRC: DAA66890 ED4CCD04
-	 * Entry: 1503 */
+	 * Entry: 1504 */
 	{
 		.reference = 1,
 		.reference_entry = 1131
 	},
-	/* F-ZERO X (E) [b2]
+	/* F-ZERO X (E) [f1]
 	 * CRC: DAA6CA7D 56AA4394
-	 * Entry: 1504 */
+	 * Entry: 1505 */
 	{
 		.reference = 1,
 		.reference_entry = 820
 	},
 	/* Pong by Oman (PD)
 	 * CRC: DAA76993 D8ACF77C
-	 * Entry: 1505 */
+	 * Entry: 1506 */
 	{
 		.status = 3,
 		.save_type = SAVE_NONE,
@@ -20456,14 +20463,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Super Mario 64 (U) (Enable Hidden Scroller Hack)
 	 * CRC: DACDE68E 7381B3C9
-	 * Entry: 1506 */
+	 * Entry: 1507 */
 	{
 		.reference = 1,
 		.reference_entry = 669
 	},
 	/* Pip's RPGs Beta 2 by Mr. Pips (PD)
 	 * CRC: DAD7F751 8B6322F0
-	 * Entry: 1507 */
+	 * Entry: 1508 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20479,7 +20486,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Pip's RPGs Beta 7 by Mr. Pips (PD)
 	 * CRC: DB363DDA 50C1C2A5
-	 * Entry: 1508 */
+	 * Entry: 1509 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20495,28 +20502,28 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Mortal Kombat 4 (U) [b2]
 	 * CRC: DB6E353B 205B0C53
-	 * Entry: 1509 */
+	 * Entry: 1510 */
 	{
 		.reference = 1,
 		.reference_entry = 441
 	},
 	/* Hercules - The Legendary Journeys (U) [t1][f1] (PAL-NTSC)
 	 * CRC: DB7184C9 F53AC14A
-	 * Entry: 1510 */
+	 * Entry: 1511 */
 	{
 		.reference = 1,
 		.reference_entry = 854
 	},
-	/* Automobili Lamborghini (U) [b4]
+	/* Automobili Lamborghini (U) [t1]
 	 * CRC: DB833E34 63548286
-	 * Entry: 1511 */
+	 * Entry: 1512 */
 	{
 		.reference = 1,
 		.reference_entry = 446
 	},
 	/* Snowboard Kids (U) [!]
 	 * CRC: DBF4EA9D 333E82C0
-	 * Entry: 1512 */
+	 * Entry: 1513 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20532,7 +20539,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Duke Nukem - ZER0 H0UR (E) [!]
 	 * CRC: DC36626A 3F3770CB
-	 * Entry: 1513 */
+	 * Entry: 1514 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20548,7 +20555,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Wayne Gretzky's 3D Hockey (U) (V1.1) [!]
 	 * CRC: DC3BAA59 0ABB456A
-	 * Entry: 1514 */
+	 * Entry: 1515 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20564,14 +20571,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Bassmasters 2000 (U) [f1] (PAL)
 	 * CRC: DC41E81E AC36CAD1
-	 * Entry: 1515 */
+	 * Entry: 1516 */
 	{
 		.reference = 1,
 		.reference_entry = 1305
 	},
 	/* Onegai Monsters (J) [!]
 	 * CRC: DC649466 572FF0D9
-	 * Entry: 1516 */
+	 * Entry: 1517 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20587,7 +20594,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Wetrix (J) [!]
 	 * CRC: DCB6EAFA C6BBCFA3
-	 * Entry: 1517 */
+	 * Entry: 1518 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -20603,7 +20610,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* GoldenEye 007 (U) (G5 Multi Hack)
 	 * CRC: DCBC50D1 09FD1AA3
-	 * Entry: 1518 */
+	 * Entry: 1519 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20619,7 +20626,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* GoldenEye 007 (U) (No Music Hack)
 	 * CRC: DCBCACD1 A67DDFB4
-	 * Entry: 1519 */
+	 * Entry: 1520 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20635,7 +20642,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* GoldenEye 007 (U) (Frozen Enemies Hack)
 	 * CRC: DCBCACD1 D72FAA33
-	 * Entry: 1520 */
+	 * Entry: 1521 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20651,7 +20658,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* GoldenEye 007 (U) (God Mode Hack)
 	 * CRC: DCBCACD1 E1051EA6
-	 * Entry: 1521 */
+	 * Entry: 1522 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20667,7 +20674,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* GoldenEye 007 (U) (No Power Bar Hack)
 	 * CRC: DCBCACD1 F294D541
-	 * Entry: 1522 */
+	 * Entry: 1523 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20683,7 +20690,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* VNES64 + Galaga (PD)
 	 * CRC: DCBE12CD FCCB5E58
-	 * Entry: 1523 */
+	 * Entry: 1524 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20699,14 +20706,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Hybrid Heaven (E) (M3) [f1] (NTSC)
 	 * CRC: DCCEDB8F BA79BEDE
-	 * Entry: 1524 */
+	 * Entry: 1525 */
 	{
 		.reference = 1,
 		.reference_entry = 676
 	},
 	/* Centre Court Tennis (E) [!]
 	 * CRC: DCCF2134 9DD63578
-	 * Entry: 1525 */
+	 * Entry: 1526 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20722,7 +20729,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Vigilante 8 - 2nd Offence (E) [!]
 	 * CRC: DD10BC7E F900B351
-	 * Entry: 1526 */
+	 * Entry: 1527 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20738,7 +20745,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Mario Artist: Paint Studio (J) [CART HACK] [T+Eng0.2_LuigiBlood
 	 * CRC: DD16F47C A8B748C7
-	 * Entry: 1527 */
+	 * Entry: 1528 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20754,7 +20761,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Super Smash Bros. (A) [!]
 	 * CRC: DD26FDA1 CB4A6BE3
-	 * Entry: 1528 */
+	 * Entry: 1529 */
 	{
 		.status = 3,
 		.save_type = SAVE_SRAM,
@@ -20770,14 +20777,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Waialae Country Club - True Golf Classics (U) (V1.1) [!]
 	 * CRC: DD318CE2 B73798BA
-	 * Entry: 1529 */
+	 * Entry: 1530 */
 	{
 		.reference = 1,
 		.reference_entry = 859
 	},
 	/* NBC-LFC Kings of Porn Vol 01 (PD) [a1]
 	 * CRC: DD95F49D 2A9B8893
-	 * Entry: 1530 */
+	 * Entry: 1531 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20793,7 +20800,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Mupen64Plus Demo by Marshallh (GPL)
 	 * CRC: DDBA4DE5 B107004A
-	 * Entry: 1531 */
+	 * Entry: 1532 */
 	{
 		.status = 5,
 		.save_type = SAVE_NONE,
@@ -20809,7 +20816,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Star Soldier - Vanishing Earth (U) [!]
 	 * CRC: DDD93C85 DAE381E8
-	 * Entry: 1532 */
+	 * Entry: 1533 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -20825,21 +20832,21 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Star Soldier - Vanishing Earth (U) [t1]
 	 * CRC: DDD982EF 3B0D6FEC
-	 * Entry: 1533 */
+	 * Entry: 1534 */
 	{
 		.reference = 1,
-		.reference_entry = 1532
+		.reference_entry = 1533
 	},
 	/* Bomberman Hero - Mirian Oujo wo Sukue! (J) [b2]
 	 * CRC: DDEF1333 E7209D07
-	 * Entry: 1534 */
+	 * Entry: 1535 */
 	{
 		.reference = 1,
 		.reference_entry = 718
 	},
 	/* Perfect Dark (U) (V1.0) [!]
 	 * CRC: DDF460CC 3CA634C0
-	 * Entry: 1535 */
+	 * Entry: 1536 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_16KB,
@@ -20855,14 +20862,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Hybrid Heaven (J) [f1] (PAL)
 	 * CRC: DE4E5E2E DCD0615D
-	 * Entry: 1536 */
+	 * Entry: 1537 */
 	{
 		.reference = 1,
 		.reference_entry = 95
 	},
 	/* Madden NFL 99 (U) [!]
 	 * CRC: DEB78BBA 52F6BD9D
-	 * Entry: 1537 */
+	 * Entry: 1538 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20878,7 +20885,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Mickey's Speedway USA (E) (M5) [!]
 	 * CRC: DED0DD9A E78225A7
-	 * Entry: 1538 */
+	 * Entry: 1539 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -20894,7 +20901,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Destruction Derby 64 (U) [!]
 	 * CRC: DEE584A2 0F161187
-	 * Entry: 1539 */
+	 * Entry: 1540 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20910,7 +20917,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* WCW-nWo Revenge (U) [!]
 	 * CRC: DEE596AB AF3B7AE7
-	 * Entry: 1540 */
+	 * Entry: 1541 */
 	{
 		.status = 0,
 		.save_type = SAVE_SRAM,
@@ -20926,14 +20933,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Mario Party 3 (U) [f3]
 	 * CRC: DF0C666A 1F52B368
-	 * Entry: 1541 */
+	 * Entry: 1542 */
 	{
 		.reference = 1,
 		.reference_entry = 834
 	},
 	/* NASCAR 2000 (U) [!]
 	 * CRC: DF331A18 5FD4E044
-	 * Entry: 1542 */
+	 * Entry: 1543 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20949,7 +20956,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Earthworm Jim 3D (U) [!]
 	 * CRC: DF574191 9EB5123D
-	 * Entry: 1543 */
+	 * Entry: 1544 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -20965,7 +20972,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Bomberman 64 - Arcade Edition (J)
 	 * CRC: DF6FF0F4 29D14238
-	 * Entry: 1544 */
+	 * Entry: 1545 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20981,7 +20988,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Bakuretsu Muteki Bangai-O (J) [!]
 	 * CRC: DF98B95D 58840978
-	 * Entry: 1545 */
+	 * Entry: 1546 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -20997,7 +21004,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* All Star Tennis '99 (E) (M5) [!]
 	 * CRC: DFD784AD AE426603
-	 * Entry: 1546 */
+	 * Entry: 1547 */
 	{
 		.status = 4,
 		.save_type = SAVE_EEPROM_4KB,
@@ -21013,7 +21020,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Jet Force Gemini (U) (Kiosk Demo) [!]
 	 * CRC: DFD8AB47 3CDBEB89
-	 * Entry: 1547 */
+	 * Entry: 1548 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21029,7 +21036,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Cruis'n World (U) [!]
 	 * CRC: DFE61153 D76118E6
-	 * Entry: 1548 */
+	 * Entry: 1549 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_16KB,
@@ -21045,7 +21052,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Bug's Life, A (G) [!]
 	 * CRC: DFF227D9 0D4D8169
-	 * Entry: 1549 */
+	 * Entry: 1550 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21061,7 +21068,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Pokemon Snap (J) (VC)
 	 * CRC: E0044E9E CD659D0D
-	 * Entry: 1550 */
+	 * Entry: 1551 */
 	{
 		.status = 0,
 		.save_type = SAVE_FLASH_RAM,
@@ -21077,7 +21084,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Tony Hawk's Pro Skater (U) (V1.1) [!]
 	 * CRC: E0144180 650B78C9
-	 * Entry: 1551 */
+	 * Entry: 1552 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21093,14 +21100,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* GoldenEye 007 (U) [t1] (Rapid Fire)
 	 * CRC: E09DAF6C 8A2B86F4
-	 * Entry: 1552 */
+	 * Entry: 1553 */
 	{
 		.reference = 1,
-		.reference_entry = 1518
+		.reference_entry = 1519
 	},
 	/* Jikkyou World Soccer 3 (J) [!]
 	 * CRC: E0A79F8C 32CC97FA
-	 * Entry: 1553 */
+	 * Entry: 1554 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21116,7 +21123,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Turok 2 - Seeds of Evil (E) [!]
 	 * CRC: E0B92B94 80E87CBD
-	 * Entry: 1554 */
+	 * Entry: 1555 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21132,7 +21139,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Turok 2 - Seeds of Evil (U) (V1.1)
 	 * CRC: E0B92B94 B9A7E025
-	 * Entry: 1555 */
+	 * Entry: 1556 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21148,7 +21155,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Tigger's Honey Hunt (E) (M7) [!]
 	 * CRC: E0C4F72F 769E1506
-	 * Entry: 1556 */
+	 * Entry: 1557 */
 	{
 		.status = 0,
 		.save_type = SAVE_FLASH_RAM,
@@ -21164,7 +21171,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Eltale Monsters (J) [!]
 	 * CRC: E13AE2DC 4FB65CE8
-	 * Entry: 1557 */
+	 * Entry: 1558 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21180,7 +21187,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* All Star Tennis '99 (U) [!]
 	 * CRC: E185E291 4E50766D
-	 * Entry: 1558 */
+	 * Entry: 1559 */
 	{
 		.status = 4,
 		.save_type = SAVE_EEPROM_4KB,
@@ -21196,14 +21203,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Pokemon Puzzle League (U) [t1]
 	 * CRC: E1AAA925 27C9C94B
-	 * Entry: 1559 */
+	 * Entry: 1560 */
 	{
 		.reference = 1,
 		.reference_entry = 160
 	},
 	/* Jikkyou World Soccer - World Cup France '98 (J) (V1.2) [!]
 	 * CRC: E1C7ABD6 4E707F28
-	 * Entry: 1560 */
+	 * Entry: 1561 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21219,7 +21226,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Magical Tetris Challenge (G) [!]
 	 * CRC: E1EF93F7 14908B0B
-	 * Entry: 1561 */
+	 * Entry: 1562 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21235,14 +21242,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Cruis'n World (U) [b1]
 	 * CRC: E2A32049 46E8F8E2
-	 * Entry: 1562 */
+	 * Entry: 1563 */
 	{
 		.reference = 1,
-		.reference_entry = 1548
+		.reference_entry = 1549
 	},
 	/* Vigilante 8 (F) [!]
 	 * CRC: E2BC82A2 591CD694
-	 * Entry: 1563 */
+	 * Entry: 1564 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21258,7 +21265,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* International Superstar Soccer 64 (E) [!]
 	 * CRC: E2D37CF0 F57E4EAE
-	 * Entry: 1564 */
+	 * Entry: 1565 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21274,7 +21281,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Bust-A-Move 3 DX (E) [!]
 	 * CRC: E328B4FA 004A28E1
-	 * Entry: 1565 */
+	 * Entry: 1566 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21290,7 +21297,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Baku Bomberman (J) [!]
 	 * CRC: E340A49C 74318D41
-	 * Entry: 1566 */
+	 * Entry: 1567 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -21306,7 +21313,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Michael Owens WLS 2000 (E) [!]
 	 * CRC: E36166C2 8613A2E5
-	 * Entry: 1567 */
+	 * Entry: 1568 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21322,14 +21329,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Lode Runner 3-D (E) (M5) [b1]
 	 * CRC: E378B28A 0CA18BCC
-	 * Entry: 1568 */
+	 * Entry: 1569 */
 	{
 		.reference = 1,
 		.reference_entry = 650
 	},
 	/* NFL Quarterback Club 2000 (U) [!]
 	 * CRC: E3AB4ED0 83040DD2
-	 * Entry: 1569 */
+	 * Entry: 1570 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21345,7 +21352,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Scooby-Doo! - Classic Creep Capers (E) [!]
 	 * CRC: E3BD221D 3C0834D3
-	 * Entry: 1570 */
+	 * Entry: 1571 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21359,16 +21366,16 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Yoshi Story (J) [b1]
+	/* Yoshi's Story (U) (M2) [b5]
 	 * CRC: E3CCFE36 398FBC75
-	 * Entry: 1571 */
+	 * Entry: 1572 */
 	{
 		.reference = 1,
-		.reference_entry = 298
+		.reference_entry = 230
 	},
 	/* Knockout Kings 2000 (E) [!]
 	 * CRC: E3D6A795 2A1C5D3C
-	 * Entry: 1572 */
+	 * Entry: 1573 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21384,7 +21391,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Diddy Kong Racing (U) (M2) (V1.1) [!]
 	 * CRC: E402430D D2FCFC9D
-	 * Entry: 1573 */
+	 * Entry: 1574 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -21400,7 +21407,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Indy Racing 2000 (U) [!]
 	 * CRC: E436467A 82DE8F9B
-	 * Entry: 1574 */
+	 * Entry: 1575 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -21416,7 +21423,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Wonder Project J2 - Koruro no Mori no Jozet (J) [!]
 	 * CRC: E43C9765 05B1C1BE
-	 * Entry: 1575 */
+	 * Entry: 1576 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21432,7 +21439,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Carmageddon 64 (E) (M4) (Eng-Spa-Fre-Ita) [!]
 	 * CRC: E48E01F5 E6E51F9B
-	 * Entry: 1576 */
+	 * Entry: 1577 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21448,7 +21455,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Magical Tetris Challenge (E) [!]
 	 * CRC: E4906679 9F243F05
-	 * Entry: 1577 */
+	 * Entry: 1578 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21464,7 +21471,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Perfect Dark (E) (M5) [!]
 	 * CRC: E4B08007 A602FF33
-	 * Entry: 1578 */
+	 * Entry: 1579 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_16KB,
@@ -21480,7 +21487,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Midway's Greatest Arcade Hits Volume 1 (U) [!]
 	 * CRC: E4B35E4C 1AC45CC9
-	 * Entry: 1579 */
+	 * Entry: 1580 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21496,7 +21503,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Analogue Test Utility by WT_Riker (POM '99) (PD) [b1]
 	 * CRC: E4C44FDA 98532F4A
-	 * Entry: 1580 */
+	 * Entry: 1581 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21512,7 +21519,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Sporting Clays by Charles Doty (PD)
 	 * CRC: E584FE34 9D91B1E2
-	 * Entry: 1581 */
+	 * Entry: 1582 */
 	{
 		.status = 3,
 		.save_type = SAVE_NONE,
@@ -21528,14 +21535,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Excitebike 64 (U) (V1.0) [f1]
 	 * CRC: E5B7F405 2C4462BF
-	 * Entry: 1582 */
+	 * Entry: 1583 */
 	{
 		.reference = 1,
 		.reference_entry = 43
 	},
 	/* NBA Jam 99 (E) [!]
 	 * CRC: E600831E 59F422A8
-	 * Entry: 1583 */
+	 * Entry: 1584 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21551,14 +21558,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Yoshi's Story (U) (M2) [t2] (Health and Eggs)
 	 * CRC: E606EE26 8783EC43
-	 * Entry: 1584 */
+	 * Entry: 1585 */
 	{
 		.reference = 1,
 		.reference_entry = 230
 	},
 	/* Iggy's Reckin' Balls (U) [!]
 	 * CRC: E616B5BC C9658B88
-	 * Entry: 1585 */
+	 * Entry: 1586 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21574,7 +21581,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* New Tetris, The (E) [!]
 	 * CRC: E61CFF0A CE1C0D71
-	 * Entry: 1586 */
+	 * Entry: 1587 */
 	{
 		.status = 0,
 		.save_type = SAVE_SRAM,
@@ -21590,7 +21597,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Ogre Battle 64 - Person of Lordly Caliber (U) (V1.0) [!]
 	 * CRC: E6419BC5 69011DE3
-	 * Entry: 1587 */
+	 * Entry: 1588 */
 	{
 		.status = 0,
 		.save_type = SAVE_SRAM,
@@ -21606,7 +21613,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Twisted Edge Extreme Snowboarding (E) [!]
 	 * CRC: E688A5B8 B14B3F18
-	 * Entry: 1588 */
+	 * Entry: 1589 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21622,7 +21629,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Gex 64 - Enter the Gecko (E) [!]
 	 * CRC: E68A000E 639166DD
-	 * Entry: 1589 */
+	 * Entry: 1590 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21638,7 +21645,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Aidyn Chronicles - The First Mage (U) (V1.0) [!]
 	 * CRC: E6A95A4F BAD2EA23
-	 * Entry: 1590 */
+	 * Entry: 1591 */
 	{
 		.status = 3,
 		.save_type = SAVE_NONE,
@@ -21654,28 +21661,28 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Nuclear Strike 64 (U) [f1] (PAL)
 	 * CRC: E6B339F6 22AE6901
-	 * Entry: 1591 */
+	 * Entry: 1592 */
 	{
 		.reference = 1,
 		.reference_entry = 493
 	},
 	/* Hexen (U) [t1]
 	 * CRC: E6BA0A06 8A3D2C2F
-	 * Entry: 1592 */
+	 * Entry: 1593 */
 	{
 		.reference = 1,
 		.reference_entry = 1080
 	},
 	/* Magical Tetris Challenge Featuring Mickey (J) [b1]
 	 * CRC: E6FCB468 CFAC7528
-	 * Entry: 1593 */
+	 * Entry: 1594 */
 	{
 		.reference = 1,
 		.reference_entry = 863
 	},
 	/* Baku Bomberman 2 (J) [!]
 	 * CRC: E73C7C4F AF93B838
-	 * Entry: 1594 */
+	 * Entry: 1595 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -21691,7 +21698,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* CD64 BIOS EEPROM-Burner V1.21
 	 * CRC: E74607D1 751139B4
-	 * Entry: 1595 */
+	 * Entry: 1596 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21707,7 +21714,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Kyojin no Doshin 1 (J) (Kiosk Demo) [CART HACK]
 	 * CRC: E7BDA0BE ADA09CAC
-	 * Entry: 1596 */
+	 * Entry: 1597 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21723,7 +21730,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Hot Wheels Turbo Racing (E) (M3) [!]
 	 * CRC: E7D20193 C1158E93
-	 * Entry: 1597 */
+	 * Entry: 1598 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21739,21 +21746,21 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Armorines - Project S.W.A.R.M. (U) [t1]
 	 * CRC: E820670A A99ED0EF
-	 * Entry: 1598 */
+	 * Entry: 1599 */
 	{
 		.reference = 1,
 		.reference_entry = 194
 	},
 	/* Buck Bumble (U) [b2]
 	 * CRC: E8522F04 43FA513A
-	 * Entry: 1599 */
+	 * Entry: 1600 */
 	{
 		.reference = 1,
 		.reference_entry = 908
 	},
 	/* O.D.T. (E) (M5) [!]
 	 * CRC: E86415A6 98395B53
-	 * Entry: 1600 */
+	 * Entry: 1601 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21769,14 +21776,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Mario Golf (U) [b1]
 	 * CRC: E8761702 26AD5DBE
-	 * Entry: 1601 */
+	 * Entry: 1602 */
 	{
 		.reference = 1,
 		.reference_entry = 698
 	},
 	/* Neon64 V1.0 by Halley's Comet Software (PD)
 	 * CRC: E87D098B 4C70341C
-	 * Entry: 1602 */
+	 * Entry: 1603 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21792,14 +21799,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Bomberman 64 - Arcade Edition (J) [f2] (PAL-CRC)
 	 * CRC: E87F1ACE 809F204B
-	 * Entry: 1603 */
+	 * Entry: 1604 */
 	{
 		.reference = 1,
-		.reference_entry = 1544
+		.reference_entry = 1545
 	},
 	/* Wheel of Fortune (U) [!]
 	 * CRC: E896092B DC244D4E
-	 * Entry: 1604 */
+	 * Entry: 1605 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21815,7 +21822,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* TopGun Demo by Horizon64 (PD)
 	 * CRC: E8BF8416 F2D9DA43
-	 * Entry: 1605 */
+	 * Entry: 1606 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21829,9 +21836,9 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Turok 2 - Seeds of Evil (E) (Kiosk Demo) [!]
+	/* Turok 2 - Seeds of Evil (U) (Kiosk Demo) [!]
 	 * CRC: E8C95AFC 35D121DA
-	 * Entry: 1606 */
+	 * Entry: 1607 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21847,7 +21854,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* J.League Tactics Soccer (J) (V1.0) [!]
 	 * CRC: E8D29DA0 15E61D94
-	 * Entry: 1607 */
+	 * Entry: 1608 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21863,21 +21870,21 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* J.League Tactics Soccer (J) (V1.0) [f1] (PAL)
 	 * CRC: E8D2A500 5AA8DBCA
-	 * Entry: 1608 */
+	 * Entry: 1609 */
 	{
 		.reference = 1,
-		.reference_entry = 1607
+		.reference_entry = 1608
 	},
 	/* Hybrid Heaven (U) [t1]
 	 * CRC: E8DBC96A DAC9E2EE
-	 * Entry: 1609 */
+	 * Entry: 1610 */
 	{
 		.reference = 1,
 		.reference_entry = 109
 	},
 	/* Frogger 2 (U) (Alpha) [!]
 	 * CRC: E8E5B179 44AA30E8
-	 * Entry: 1610 */
+	 * Entry: 1611 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21893,7 +21900,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Morita Shougi 64 (J) [!]
 	 * CRC: E8E8DD70 415DD198
-	 * Entry: 1611 */
+	 * Entry: 1612 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21909,7 +21916,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* CyberTiger (U) [!]
 	 * CRC: E8FC8EA1 9F738391
-	 * Entry: 1612 */
+	 * Entry: 1613 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21925,7 +21932,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Ready 2 Rumble Boxing - Round 2 (U) [!]
 	 * CRC: E9219533 13FBAFBD
-	 * Entry: 1613 */
+	 * Entry: 1614 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21941,14 +21948,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Tigger's Honey Hunt (U) [t1]
 	 * CRC: E972B385 7668D414
-	 * Entry: 1614 */
+	 * Entry: 1615 */
 	{
 		.reference = 1,
 		.reference_entry = 532
 	},
 	/* Legend of Zelda, The - Majora's Mask (E) (M4) (V1.0) [!]
 	 * CRC: E97955C6 BC338D38
-	 * Entry: 1615 */
+	 * Entry: 1616 */
 	{
 		.status = 4,
 		.save_type = SAVE_FLASH_RAM,
@@ -21964,7 +21971,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Plasma Demo (PD)
 	 * CRC: E9F52336 6BEFAA5F
-	 * Entry: 1616 */
+	 * Entry: 1617 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21980,7 +21987,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Shadow Man (F) [!]
 	 * CRC: EA06F8C3 07C2DEED
-	 * Entry: 1617 */
+	 * Entry: 1618 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -21996,14 +22003,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Armorines - Project S.W.A.R.M. (U) [f1] (PAL)
 	 * CRC: EA090572 192F9673
-	 * Entry: 1618 */
+	 * Entry: 1619 */
 	{
 		.reference = 1,
 		.reference_entry = 194
 	},
 	/* Pip's Porn Pack 3 by Mr. Pips (PD)
 	 * CRC: EA2A6A75 52B2C00F
-	 * Entry: 1619 */
+	 * Entry: 1620 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22019,14 +22026,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Super Smash Bros. (U) [f4] (GameShark)
 	 * CRC: EA6D4C3F 13837E54
-	 * Entry: 1620 */
+	 * Entry: 1621 */
 	{
 		.reference = 1,
 		.reference_entry = 1003
 	},
 	/* GameShark Pro V3.3 (Apr 2000) (Unl) [!]
 	 * CRC: EA6D5BF8 E2B4696C
-	 * Entry: 1621 */
+	 * Entry: 1622 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22042,7 +22049,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Vigilante 8 (U) [!]
 	 * CRC: EA71056A E4214847
-	 * Entry: 1622 */
+	 * Entry: 1623 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22058,7 +22065,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Ready 2 Rumble Boxing (U) [!]
 	 * CRC: EAB7B429 BAC92C57
-	 * Entry: 1623 */
+	 * Entry: 1624 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22074,14 +22081,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Ken Griffey Jr.'s Slugfest (U) [f4] (Nosave-Z64)
 	 * CRC: EAC07419 0F9F72A0
-	 * Entry: 1624 */
+	 * Entry: 1625 */
 	{
 		.reference = 1,
 		.reference_entry = 353
 	},
 	/* Star Wars Episode I - Battle for Naboo (E) [!]
 	 * CRC: EAE6ACE2 020B4384
-	 * Entry: 1625 */
+	 * Entry: 1626 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -22097,7 +22104,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Madden NFL 2001 (U) [!]
 	 * CRC: EB38F792 190EA246
-	 * Entry: 1626 */
+	 * Entry: 1627 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22113,7 +22120,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* NBA Live 2000 (E) (M4) [!]
 	 * CRC: EB499C8F CD4567B6
-	 * Entry: 1627 */
+	 * Entry: 1628 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22129,14 +22136,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* NFL Blitz 2001 (U) [f1] (PAL-NTSC)
 	 * CRC: EB7709E2 27A91031
-	 * Entry: 1628 */
+	 * Entry: 1629 */
 	{
 		.reference = 1,
 		.reference_entry = 359
 	},
 	/* Mission Impossible (I) [!]
 	 * CRC: EBA949DC 39BAECBD
-	 * Entry: 1629 */
+	 * Entry: 1630 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -22152,7 +22159,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Legend of Zelda, The - Ocarina of Time (U) (V1.0) (Room121 Hack
 	 * CRC: EBE8AA17 B1EF65E6
-	 * Entry: 1630 */
+	 * Entry: 1631 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22168,7 +22175,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* NBA Jam 2000 (U) [!]
 	 * CRC: EBEEA8DB F2ECB23C
-	 * Entry: 1631 */
+	 * Entry: 1632 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22184,7 +22191,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* SD Hiryuu no Ken Densetsu (J) [!]
 	 * CRC: EBF5F6B7 C956D739
-	 * Entry: 1632 */
+	 * Entry: 1633 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22200,7 +22207,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Space Invaders (U) [!]
 	 * CRC: EBFE2397 FF74DA34
-	 * Entry: 1633 */
+	 * Entry: 1634 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22216,7 +22223,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Pocket Monsters Snap (J) [!]
 	 * CRC: EC0F690D 32A7438C
-	 * Entry: 1634 */
+	 * Entry: 1635 */
 	{
 		.status = 0,
 		.save_type = SAVE_FLASH_RAM,
@@ -22232,7 +22239,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Zelda no Densetsu - Mujura no Kamen (J) (V1.0) [!]
 	 * CRC: EC417312 EB31DE5F
-	 * Entry: 1635 */
+	 * Entry: 1636 */
 	{
 		.status = 4,
 		.save_type = SAVE_FLASH_RAM,
@@ -22248,7 +22255,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Donkey Kong 64 (U) [!]
 	 * CRC: EC58EABF AD7C7169
-	 * Entry: 1636 */
+	 * Entry: 1637 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_16KB,
@@ -22262,9 +22269,9 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 3,
 	},
-	/* Zelda no Densetsu - Toki no Ocarina (J) (V1.0) [!]
+	/* Legend of Zelda, The - Ocarina of Time (U) (V1.0) [!]
 	 * CRC: EC7011B7 7616D72B
-	 * Entry: 1637 */
+	 * Entry: 1638 */
 	{
 		.status = 4,
 		.save_type = SAVE_SRAM,
@@ -22276,18 +22283,18 @@ const struct rom_entry_s rom_dat[1765] = {
 		.count_per_op = 2,
 		.disable_extra_mem = 0,
 		.si_dma_duration = 0,
-		.cheat_lut = 0,
+		.cheat_lut = 6,
 	},
 	/* F-ZERO X (E) [b3]
 	 * CRC: EC986EA9 EB463E4A
-	 * Entry: 1638 */
+	 * Entry: 1639 */
 	{
 		.reference = 1,
 		.reference_entry = 820
 	},
 	/* SRAM Uploader-Editor by BlackBag (PD)
 	 * CRC: EC9BECFF CAB83632
-	 * Entry: 1639 */
+	 * Entry: 1640 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22303,7 +22310,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Fireworks Demo by CrowTRobo (PD)
 	 * CRC: ECAEC238 EE351DDA
-	 * Entry: 1640 */
+	 * Entry: 1641 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22319,7 +22326,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Sydney 2000 (E) (Prototype)
 	 * CRC: ECBD95DD 1FAB637D
-	 * Entry: 1641 */
+	 * Entry: 1642 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22333,9 +22340,9 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Neon64 V1.1 by Halley's Comet Software (PD)
+	/* Ultra Demo Bootcode by Locke^ (PD) [h1C]
 	 * CRC: ED42A2D4 7A71CD91
-	 * Entry: 1642 */
+	 * Entry: 1643 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22351,7 +22358,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Mario Party 2 (J) [!]
 	 * CRC: ED567D0F 38B08915
-	 * Entry: 1643 */
+	 * Entry: 1644 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -22367,7 +22374,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* WinBack - Covert Operations (U) [!]
 	 * CRC: ED98957E 8242DCAC
-	 * Entry: 1644 */
+	 * Entry: 1645 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22383,7 +22390,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Chaos 89 Demo (PD)
 	 * CRC: EDA1A0C7 58EE0464
-	 * Entry: 1645 */
+	 * Entry: 1646 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22399,7 +22406,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* POMolizer Demo by Renderman (POM '99) (PD)
 	 * CRC: EDAFD3C0 39EF3599
-	 * Entry: 1646 */
+	 * Entry: 1647 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22415,7 +22422,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Rush 2 - Extreme Racing USA (U) [!]
 	 * CRC: EDD6E031 68136013
-	 * Entry: 1647 */
+	 * Entry: 1648 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22431,7 +22438,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Beetle Adventure Racing! (U) (M3) [!]
 	 * CRC: EDF419A8 BF1904CC
-	 * Entry: 1648 */
+	 * Entry: 1649 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22447,14 +22454,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Hydro Thunder (E) [f1] (NTSC)
 	 * CRC: EDFB6B01 8893F62C
-	 * Entry: 1649 */
+	 * Entry: 1650 */
 	{
 		.reference = 1,
 		.reference_entry = 1252
 	},
 	/* PGA European Tour (E) (M5) [!]
 	 * CRC: EE08C602 6BC2D5A6
-	 * Entry: 1650 */
+	 * Entry: 1651 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -22470,7 +22477,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* GT 64 - Championship Edition (E) (M3) [!]
 	 * CRC: EE4A0E33 8FD588C9
-	 * Entry: 1651 */
+	 * Entry: 1652 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_16KB,
@@ -22486,7 +22493,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Pocket Monsters Stadium Kin Gin (J) [!]
 	 * CRC: EE4FD7C2 9CF1D938
-	 * Entry: 1652 */
+	 * Entry: 1653 */
 	{
 		.status = 0,
 		.save_type = SAVE_FLASH_RAM,
@@ -22502,14 +22509,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Zelda no Densetsu - Mujura no Kamen (J) (V1.0) [f1]
 	 * CRC: EE7AF9EC A750B2D3
-	 * Entry: 1653 */
+	 * Entry: 1654 */
 	{
 		.reference = 1,
-		.reference_entry = 1635
+		.reference_entry = 1636
 	},
 	/* Extreme-G (J) [!]
 	 * CRC: EE802DC4 690BD57D
-	 * Entry: 1654 */
+	 * Entry: 1655 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22525,21 +22532,21 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Legend of Zelda, The - Ocarina of Time (E) (M3) (V1.0) [f1] (zp
 	 * CRC: EEE48FAF 6A92BAFF
-	 * Entry: 1655 */
+	 * Entry: 1656 */
 	{
 		.reference = 1,
 		.reference_entry = 1220
 	},
 	/* Superman (U) (M3) [f1] (PAL)
 	 * CRC: EEF7DE23 57E4FEA9
-	 * Entry: 1656 */
+	 * Entry: 1657 */
 	{
 		.reference = 1,
 		.reference_entry = 1123
 	},
 	/* LaC's Universal Bootemu V1.0 (PD)
 	 * CRC: EF623F50 ECBB509B
-	 * Entry: 1657 */
+	 * Entry: 1658 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22555,7 +22562,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Shin Nihon Pro Wrestling - Toukon Road - Brave Spirits (J) [!]
 	 * CRC: EF703CA4 4D4A9AC9
-	 * Entry: 1658 */
+	 * Entry: 1659 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22571,7 +22578,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Tonic Trouble (U) (V1.1) [!]
 	 * CRC: EF9E9714 C03B2C7D
-	 * Entry: 1659 */
+	 * Entry: 1660 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22587,7 +22594,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Pokemon Stadium 2 (I) [!]
 	 * CRC: EFCEAF00 22094848
-	 * Entry: 1660 */
+	 * Entry: 1661 */
 	{
 		.status = 0,
 		.save_type = SAVE_FLASH_RAM,
@@ -22603,7 +22610,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* NUTS - Nintendo Ultra64 Test Suite by MooglyGuy (PD)
 	 * CRC: EFDAFEA4 E38D6A80
-	 * Entry: 1661 */
+	 * Entry: 1662 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22619,7 +22626,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Top Gear Rally 2 (Beta)
 	 * CRC: EFDF9140 A4168D6B
-	 * Entry: 1662 */
+	 * Entry: 1663 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22635,7 +22642,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Carmageddon 64 (U) [!]
 	 * CRC: F00F2D4E 340FAAF4
-	 * Entry: 1663 */
+	 * Entry: 1664 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22651,7 +22658,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Legend of Zelda, The - Ocarina of Time - Master Quest (U) (GC) 
 	 * CRC: F034001A AE47ED06
-	 * Entry: 1664 */
+	 * Entry: 1665 */
 	{
 		.status = 4,
 		.save_type = SAVE_SRAM,
@@ -22667,7 +22674,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Clay Fighter 63 1-3 (U) [!]
 	 * CRC: F03C24CA C5237BCC
-	 * Entry: 1665 */
+	 * Entry: 1666 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22683,14 +22690,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Rugrats - Scavenger Hunt (U) [f1] (PAL)
 	 * CRC: F04A729C 19971680
-	 * Entry: 1666 */
+	 * Entry: 1667 */
 	{
 		.reference = 1,
 		.reference_entry = 82
 	},
 	/* Road Rash 64 (U) [!]
 	 * CRC: F050746C 247B820B
-	 * Entry: 1667 */
+	 * Entry: 1668 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22706,21 +22713,21 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* In-Fisherman Bass Hunter 64 (U) [f1] (PAL)
 	 * CRC: F050D644 B5A5CED1
-	 * Entry: 1668 */
+	 * Entry: 1669 */
 	{
 		.reference = 1,
 		.reference_entry = 959
 	},
 	/* NHL Breakaway 99 (U) [b2]
 	 * CRC: F0C5F320 B22773CA
-	 * Entry: 1669 */
+	 * Entry: 1670 */
 	{
 		.reference = 1,
 		.reference_entry = 464
 	},
 	/* V64Jr Backup Tool V0.2b_Beta by RedboX (PD)
 	 * CRC: F11B663A 698824C0
-	 * Entry: 1670 */
+	 * Entry: 1671 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22736,7 +22743,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Action Replay Pro 64 V3.0 (Unl)
 	 * CRC: F1297BC9 42CDAE9D
-	 * Entry: 1671 */
+	 * Entry: 1672 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22752,7 +22759,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Wayne Gretzky's 3D Hockey (J) [!]
 	 * CRC: F1301043 FD80541A
-	 * Entry: 1672 */
+	 * Entry: 1673 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22768,7 +22775,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Star Twins (J) [!]
 	 * CRC: F163A242 F2449B3B
-	 * Entry: 1673 */
+	 * Entry: 1674 */
 	{
 		.status = 0,
 		.save_type = SAVE_FLASH_RAM,
@@ -22784,7 +22791,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Micro Machines 64 Turbo (U) [!]
 	 * CRC: F1850C35 ACE07912
-	 * Entry: 1674 */
+	 * Entry: 1675 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22800,21 +22807,21 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Bust-A-Move '99 (U) [f1] (PAL)
 	 * CRC: F23CA406 EC2ACE78
-	 * Entry: 1675 */
+	 * Entry: 1676 */
 	{
 		.reference = 1,
 		.reference_entry = 449
 	},
-	/* Airboarder 64 (J) [b1][t1]
+	/* Airboarder 64 (J) [t1]
 	 * CRC: F255D6F1 B65D6728
-	 * Entry: 1676 */
+	 * Entry: 1677 */
 	{
 		.reference = 1,
 		.reference_entry = 745
 	},
 	/* UltraSMS V1.0 by Jos Kwanten (PD)
 	 * CRC: F291B959 A24CBCAF
-	 * Entry: 1677 */
+	 * Entry: 1678 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22830,7 +22837,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Elmo's Letter Adventure (U) [!]
 	 * CRC: F2A653CB 60633B3B
-	 * Entry: 1678 */
+	 * Entry: 1679 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22846,7 +22853,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* GoldenEye 007 (U) (G5 Multi (for backups) Hack)
 	 * CRC: F2C3A524 A1C4DB13
-	 * Entry: 1679 */
+	 * Entry: 1680 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22862,14 +22869,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Mortal Kombat Trilogy (U) (V1.0) [t2] (All Attacks Hurt P1)
 	 * CRC: F2F75C36 36637257
-	 * Entry: 1680 */
+	 * Entry: 1681 */
 	{
 		.reference = 1,
-		.reference_entry = 1498
+		.reference_entry = 1499
 	},
 	/* Castlevania (U) (V1.1) [!]
 	 * CRC: F35D5335 B7667CB7
-	 * Entry: 1681 */
+	 * Entry: 1682 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22885,7 +22892,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Castlevania (U) (V1.0) [!]
 	 * CRC: F35D5F95 8AFE3D69
-	 * Entry: 1682 */
+	 * Entry: 1683 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22901,21 +22908,21 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* All Star Tennis '99 (E) (M5) [f4] (NTSC)
 	 * CRC: F3700A53 4795C23D
-	 * Entry: 1683 */
+	 * Entry: 1684 */
 	{
 		.reference = 1,
-		.reference_entry = 1546
+		.reference_entry = 1547
 	},
 	/* Diddy Kong Racing (J) [f1] (Z64)
 	 * CRC: F389A35A 17785562
-	 * Entry: 1684 */
+	 * Entry: 1685 */
 	{
 		.reference = 1,
 		.reference_entry = 792
 	},
 	/* Rayman 2 - The Great Escape (U) (M5) [!]
 	 * CRC: F3C5BF9B 160F33E2
-	 * Entry: 1685 */
+	 * Entry: 1686 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22931,7 +22938,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Premier Manager 64 (E) [!]
 	 * CRC: F3D27F54 C111ACF9
-	 * Entry: 1686 */
+	 * Entry: 1687 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22947,7 +22954,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Legend of Zelda, The - Ocarina of Time (U) (GC) [!]
 	 * CRC: F3DD35BA 4152E075
-	 * Entry: 1687 */
+	 * Entry: 1688 */
 	{
 		.status = 4,
 		.save_type = SAVE_SRAM,
@@ -22963,7 +22970,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Super Bowling (J) [!]
 	 * CRC: F3F2F385 6E490C7F
-	 * Entry: 1688 */
+	 * Entry: 1689 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22979,7 +22986,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* International Superstar Soccer '98 (E) [!]
 	 * CRC: F41B6343 C10661E6
-	 * Entry: 1689 */
+	 * Entry: 1690 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -22995,7 +23002,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Zelda no Densetsu - Toki no Ocarina GC URA (J) (GC) [!]
 	 * CRC: F43B45BA 2F0E9B6F
-	 * Entry: 1690 */
+	 * Entry: 1691 */
 	{
 		.status = 4,
 		.save_type = SAVE_SRAM,
@@ -23009,23 +23016,23 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 4,
 	},
-	/* Wild Choppers (J) [b2]
+	/* Wild Choppers (J) [t1]
 	 * CRC: F4520439 753A6281
-	 * Entry: 1691 */
+	 * Entry: 1692 */
 	{
 		.reference = 1,
 		.reference_entry = 91
 	},
 	/* Premier Manager 64 (E) [f1] (NTSC)
 	 * CRC: F45A6784 F587C72F
-	 * Entry: 1692 */
+	 * Entry: 1693 */
 	{
 		.reference = 1,
-		.reference_entry = 1686
+		.reference_entry = 1687
 	},
 	/* Super B-Daman - Battle Phoenix 64 (J) [!]
 	 * CRC: F4646B69 C5751095
-	 * Entry: 1693 */
+	 * Entry: 1694 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23041,7 +23048,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* PD Ultraman Battle Collection 64 (J) [!]
 	 * CRC: F468118C E32EE44E
-	 * Entry: 1694 */
+	 * Entry: 1695 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_16KB,
@@ -23057,7 +23064,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* LEGO Racers (E) (M10) [!]
 	 * CRC: F478D8B3 9716DD6D
-	 * Entry: 1695 */
+	 * Entry: 1696 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23073,7 +23080,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Bike Race '98 V1.2 by NAN (PD)
 	 * CRC: F4B64159 46FC16CF
-	 * Entry: 1696 */
+	 * Entry: 1697 */
 	{
 		.status = 2,
 		.save_type = SAVE_NONE,
@@ -23089,7 +23096,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Lylat Wars (E) (M3) [!]
 	 * CRC: F4CBE92C B392ED12
-	 * Entry: 1697 */
+	 * Entry: 1698 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -23103,9 +23110,9 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Quake 64 Intro (PD)
+	/* Tristar and Lightforce Quake Intro by Ayatollah & Mike (PD)
 	 * CRC: F4D89C08 3F34930D
-	 * Entry: 1698 */
+	 * Entry: 1699 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23121,7 +23128,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Glover (E) (M3) [!]
 	 * CRC: F5237301 99E3EE93
-	 * Entry: 1699 */
+	 * Entry: 1700 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -23137,7 +23144,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Mystical Ninja Starring Goemon (E) [!]
 	 * CRC: F5360FBE 2BF1691D
-	 * Entry: 1700 */
+	 * Entry: 1701 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23153,7 +23160,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Deadly Arts (U) [!]
 	 * CRC: F5363349 DBF9D21B
-	 * Entry: 1701 */
+	 * Entry: 1702 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23169,7 +23176,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Bomberman 64 (U) [!]
 	 * CRC: F568D51E 7E49BA1E
-	 * Entry: 1702 */
+	 * Entry: 1703 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -23185,7 +23192,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* FIFA - Road to World Cup 98 - World Cup heno Michi (J) [!]
 	 * CRC: F5733C67 17A3973A
-	 * Entry: 1703 */
+	 * Entry: 1704 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23199,16 +23206,16 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Donkey Kong 64 (U) (Kiosk Demo) [b1]
+	/* Donkey Kong 64 (U) (Kiosk Demo) [f1] (PAL)
 	 * CRC: F5C21403 8FCA0710
-	 * Entry: 1704 */
+	 * Entry: 1705 */
 	{
 		.reference = 1,
 		.reference_entry = 94
 	},
 	/* Vigilante 8 - 2nd Offense (U) [!]
 	 * CRC: F5C5866D 052713D9
-	 * Entry: 1705 */
+	 * Entry: 1706 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23224,7 +23231,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Zelda no Densetsu - Toki no Ocarina GC (J) (GC) [!]
 	 * CRC: F611F4BA C584135C
-	 * Entry: 1706 */
+	 * Entry: 1707 */
 	{
 		.status = 4,
 		.save_type = SAVE_SRAM,
@@ -23240,7 +23247,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Bug's Life, A (I) [!]
 	 * CRC: F63B89CE 4582D57D
-	 * Entry: 1707 */
+	 * Entry: 1708 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23256,28 +23263,28 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Star Fox 64 (U) (V1.0) [t3] (No Damage-Unbreakable Wings)
 	 * CRC: F6621BFB 186D11A6
-	 * Entry: 1708 */
+	 * Entry: 1709 */
 	{
 		.reference = 1,
 		.reference_entry = 1146
 	},
 	/* Lylat Wars (E) (M3) [f2] (NTSC)
 	 * CRC: F667DC04 86510A81
-	 * Entry: 1709 */
+	 * Entry: 1710 */
 	{
 		.reference = 1,
-		.reference_entry = 1697
+		.reference_entry = 1698
 	},
 	/* Kakutou Denshou - F-Cup Maniax (J) [f1] (PAL)
 	 * CRC: F6E3494A E4EC8933
-	 * Entry: 1710 */
+	 * Entry: 1711 */
 	{
 		.reference = 1,
 		.reference_entry = 536
 	},
 	/* Fushigi no Dungeon - Fuurai no Shiren 2 - Oni Shuurai! Shiren J
 	 * CRC: F774EAEE F0D8B13E
-	 * Entry: 1711 */
+	 * Entry: 1712 */
 	{
 		.status = 0,
 		.save_type = SAVE_SRAM,
@@ -23293,14 +23300,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Pokemon Snap (A) [f1] (GameShark)
 	 * CRC: F795ACE1 8DEDE03C
-	 * Entry: 1712 */
+	 * Entry: 1713 */
 	{
 		.reference = 1,
 		.reference_entry = 833
 	},
 	/* Liner V1.02 by Colin Phillipps of Memir (PD)
 	 * CRC: F7B1C8E8 70536D3E
-	 * Entry: 1713 */
+	 * Entry: 1714 */
 	{
 		.status = 1,
 		.save_type = SAVE_NONE,
@@ -23316,7 +23323,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Shuffle Puck 64 (PD)
 	 * CRC: F7DF7D0D ED52018F
-	 * Entry: 1714 */
+	 * Entry: 1715 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23332,7 +23339,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Zelda no Densetsu - Toki no Ocarina - Zelda Collection Version 
 	 * CRC: F7F52DB8 2195E636
-	 * Entry: 1715 */
+	 * Entry: 1716 */
 	{
 		.status = 4,
 		.save_type = SAVE_SRAM,
@@ -23348,7 +23355,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* War Gods (U) [!]
 	 * CRC: F7FE28F6 C3F2ACC3
-	 * Entry: 1716 */
+	 * Entry: 1717 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23364,7 +23371,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* City-Tour GP - Zennihon GT Senshuken (J) [!]
 	 * CRC: F8009DB0 6B291823
-	 * Entry: 1717 */
+	 * Entry: 1718 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_16KB,
@@ -23380,7 +23387,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* LCARS Demo by WT Riker (PD)
 	 * CRC: F828DF21 C5E83F66
-	 * Entry: 1718 */
+	 * Entry: 1719 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23396,14 +23403,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* FIFA 99 (E) (M8) [hI]
 	 * CRC: F82C85BE DEB717E2
-	 * Entry: 1719 */
+	 * Entry: 1720 */
 	{
 		.reference = 1,
 		.reference_entry = 8
 	},
 	/* TG Rally 2 (E) [!]
 	 * CRC: F82DD377 8C3FB347
-	 * Entry: 1720 */
+	 * Entry: 1721 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23419,14 +23426,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Legend of Zelda, The - Ocarina of Time (U) (V1.0) [T+Rus1.0beta
 	 * CRC: F8B1C7C7 1EFCA431
-	 * Entry: 1721 */
+	 * Entry: 1722 */
 	{
 		.reference = 1,
-		.reference_entry = 1637
+		.reference_entry = 1638
 	},
 	/* Killer Instinct Gold (U) (V1.2) [!]
 	 * CRC: F908CA4C 36464327
-	 * Entry: 1722 */
+	 * Entry: 1723 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -23442,14 +23449,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Mortal Kombat 4 (U) [b1]
 	 * CRC: F96E28F7 421A4285
-	 * Entry: 1723 */
+	 * Entry: 1724 */
 	{
 		.reference = 1,
 		.reference_entry = 441
 	},
 	/* Excitebike 64 (U) (V1.1)
 	 * CRC: F9D411E3 7CB29BC0
-	 * Entry: 1724 */
+	 * Entry: 1725 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_16KB,
@@ -23465,14 +23472,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Mortal Kombat Trilogy (U) (V1.0) [t1] (Hit Anywhere)
 	 * CRC: F9F75B92 AFEC042B
-	 * Entry: 1725 */
+	 * Entry: 1726 */
 	{
 		.reference = 1,
-		.reference_entry = 1498
+		.reference_entry = 1499
 	},
 	/* World Cup 98 (E) (M8) [!]
 	 * CRC: F9FC3090 FF014EC2
-	 * Entry: 1726 */
+	 * Entry: 1727 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23488,7 +23495,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Clay Fighter - Sculptor's Cut (U) [!]
 	 * CRC: FA5A3DFF B4C9CDB9
-	 * Entry: 1727 */
+	 * Entry: 1728 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23504,7 +23511,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* NuFan Demo by Kid Stardust (PD) [b1]
 	 * CRC: FA7D3935 97AC54FC
-	 * Entry: 1728 */
+	 * Entry: 1729 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23520,7 +23527,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Mickey's Speedway USA (U) [!]
 	 * CRC: FA8C4571 BBE7F9C0
-	 * Entry: 1729 */
+	 * Entry: 1730 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -23536,7 +23543,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* CD64 BIOS Direct-Upgrade V1.11
 	 * CRC: FAB972E4 1CB0882B
-	 * Entry: 1730 */
+	 * Entry: 1731 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23552,7 +23559,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Star Wars - Shadows of the Empire (U) (Prototype)
 	 * CRC: FB315F95 7786CBFB
-	 * Entry: 1731 */
+	 * Entry: 1732 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23568,7 +23575,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Charlie Blast's Territory (E) [!]
 	 * CRC: FB3C48D0 8D28F69F
-	 * Entry: 1732 */
+	 * Entry: 1733 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23584,14 +23591,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Hybrid Heaven (U) [f1] (PAL)
 	 * CRC: FB610592 898A9705
-	 * Entry: 1733 */
+	 * Entry: 1734 */
 	{
 		.reference = 1,
 		.reference_entry = 109
 	},
 	/* Duck Dodgers Starring Daffy Duck (U) (M3) [!]
 	 * CRC: FBB9F1FA 6BF88689
-	 * Entry: 1734 */
+	 * Entry: 1735 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -23605,9 +23612,9 @@ const struct rom_entry_s rom_dat[1765] = {
 		.si_dma_duration = 0,
 		.cheat_lut = 0,
 	},
-	/* Pip's World Game 2 by Mr. Pips (PD) [b1]
+	/* Pip's World Game 2 by Mr. Pips (PD)
 	 * CRC: FC051819 A46A48F6
-	 * Entry: 1735 */
+	 * Entry: 1736 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23623,7 +23630,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Space Station Silicon Valley (E) (M7) [!]
 	 * CRC: FC70E272 08FFE7AA
-	 * Entry: 1736 */
+	 * Entry: 1737 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -23639,7 +23646,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Powerpuff Girls, The - Chemical X-Traction (U) [!]
 	 * CRC: FC74D475 9A0278AB
-	 * Entry: 1737 */
+	 * Entry: 1738 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23655,7 +23662,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Automobili Lamborghini (E) [!]
 	 * CRC: FC7797BF 4A95E83C
-	 * Entry: 1738 */
+	 * Entry: 1739 */
 	{
 		.status = 4,
 		.save_type = SAVE_NONE,
@@ -23671,14 +23678,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* NASCAR 99 (U) [b2]
 	 * CRC: FCB2955B B302626D
-	 * Entry: 1739 */
+	 * Entry: 1740 */
 	{
 		.reference = 1,
 		.reference_entry = 231
 	},
 	/* Mystical Ninja Starring Goemon (U) [!]
 	 * CRC: FCBCCB21 72903C6B
-	 * Entry: 1740 */
+	 * Entry: 1741 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23694,7 +23701,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Knife Edge - Nose Gunner (U) [!]
 	 * CRC: FCE0D799 65316C54
-	 * Entry: 1741 */
+	 * Entry: 1742 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23710,14 +23717,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Rampage 2 - Universal Tour (U) [t2]
 	 * CRC: FD2FC875 3BD10D89
-	 * Entry: 1742 */
+	 * Entry: 1743 */
 	{
 		.reference = 1,
 		.reference_entry = 713
 	},
 	/* N64 Seminar Demo - CPU by ZoRAXE (PD)
 	 * CRC: FD61BB45 FBB51EB2
-	 * Entry: 1743 */
+	 * Entry: 1744 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23733,7 +23740,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* StarCraft 64 (G)
 	 * CRC: FD6907F0 83CBC160
-	 * Entry: 1744 */
+	 * Entry: 1745 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23749,7 +23756,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Diddy Kong Racing (E) (M3) (V1.0) [!]
 	 * CRC: FD73F775 9724755A
-	 * Entry: 1745 */
+	 * Entry: 1746 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -23765,14 +23772,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Star Wars Episode I - Battle for Naboo (U) [t1]
 	 * CRC: FD8F6875 42608FDC
-	 * Entry: 1746 */
+	 * Entry: 1747 */
 	{
 		.reference = 1,
 		.reference_entry = 411
 	},
 	/* Extreme-G (U) [!]
 	 * CRC: FDA245D2 A74A3D47
-	 * Entry: 1747 */
+	 * Entry: 1748 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23788,14 +23795,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* AeroGauge (U) [f1] (PAL)
 	 * CRC: FDAA963C FDCCD971
-	 * Entry: 1748 */
+	 * Entry: 1749 */
 	{
 		.reference = 1,
 		.reference_entry = 1200
 	},
 	/* F-1 Pole Position 64 (E) (M3) [!]
 	 * CRC: FDD248B2 569A020E
-	 * Entry: 1749 */
+	 * Entry: 1750 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23811,7 +23818,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Turok 2 - Seeds of Evil (G) [!]
 	 * CRC: FE05840B 9393320C
-	 * Entry: 1750 */
+	 * Entry: 1751 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23827,7 +23834,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* CD64 BIOS EEPROM-Burner V1.23
 	 * CRC: FE169919 46F54C2D
-	 * Entry: 1751 */
+	 * Entry: 1752 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23843,7 +23850,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Star Wars - Teikoku no Kage (J) [!]
 	 * CRC: FE24AC63 1B41AA17
-	 * Entry: 1752 */
+	 * Entry: 1753 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -23859,7 +23866,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Triple Play 2000 (U) [!]
 	 * CRC: FE4B6B43 081D29A7
-	 * Entry: 1753 */
+	 * Entry: 1754 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23875,21 +23882,21 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Nuclear Strike 64 (U) [t1]
 	 * CRC: FE5DC5D4 E1815BE5
-	 * Entry: 1754 */
+	 * Entry: 1755 */
 	{
 		.reference = 1,
 		.reference_entry = 493
 	},
 	/* Pocket Monsters Stadium 2 (J) [f1]
 	 * CRC: FE667A12 0D2195AD
-	 * Entry: 1755 */
+	 * Entry: 1756 */
 	{
 		.reference = 1,
 		.reference_entry = 673
 	},
 	/* Fighter's Destiny (G) [!]
 	 * CRC: FE94E570 E4873A9C
-	 * Entry: 1756 */
+	 * Entry: 1757 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -23905,14 +23912,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Super Mario 64 (U) [t3]
 	 * CRC: FECE2B85 331406D1
-	 * Entry: 1757 */
+	 * Entry: 1758 */
 	{
 		.reference = 1,
 		.reference_entry = 669
 	},
 	/* RR64 - Ridge Racer 64 (E) [!]
 	 * CRC: FEE97010 4E94A9A0
-	 * Entry: 1758 */
+	 * Entry: 1759 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_16KB,
@@ -23928,14 +23935,14 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Banjo-Kazooie (U) (V1.0) [b6]
 	 * CRC: FEF9D364 FBD6D06E
-	 * Entry: 1759 */
+	 * Entry: 1760 */
 	{
 		.reference = 1,
 		.reference_entry = 1132
 	},
 	/* LaC's Universal Bootemu V1.2 (PD)
 	 * CRC: FF0AC362 F4EC09B3
-	 * Entry: 1760 */
+	 * Entry: 1761 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23951,7 +23958,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Cruis'n USA (U) (V1.0) [!]
 	 * CRC: FF2F2FB4 D161149A
-	 * Entry: 1761 */
+	 * Entry: 1762 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,
@@ -23967,7 +23974,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Mortal Kombat Mythologies - Sub-Zero (E) [!]
 	 * CRC: FF44EDC4 1AAE9213
-	 * Entry: 1762 */
+	 * Entry: 1763 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23983,7 +23990,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* UltraMSX2 V1.0 w-Salamander by Jos Kwanten (PD)
 	 * CRC: FF922478 570B5673
-	 * Entry: 1763 */
+	 * Entry: 1764 */
 	{
 		.status = 0,
 		.save_type = SAVE_NONE,
@@ -23999,7 +24006,7 @@ const struct rom_entry_s rom_dat[1765] = {
 	},
 	/* Star Fox 64 (J) (V1.0) [!]
 	 * CRC: FFCAA7C1 68858537
-	 * Entry: 1764 */
+	 * Entry: 1765 */
 	{
 		.status = 0,
 		.save_type = SAVE_EEPROM_4KB,

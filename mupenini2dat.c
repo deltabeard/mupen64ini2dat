@@ -18,7 +18,7 @@
 
 #include <assert.h>
 #include <errno.h>
-#include <stdint.h>
+#include <inttypes.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -197,13 +197,13 @@ struct rom_entry_s *convert_entries(const char *ini,
 			assert(line != NULL);
 			line++;
 
-			c1 = strtoll(line, &endptr, 16);
+			c1 = strtoul(line, &endptr, 16);
 			assert(*endptr == ' ');
 
 			/* Move to second CRC. */
 			line = endptr;
 
-			c2 = strtoll(line, &endptr, 16);
+			c2 = strtoul(line, &endptr, 16);
 			assert(*endptr == '\n');
 			entry->crc = ((uint64_t)c1 << 32) | c2;
 
@@ -264,24 +264,22 @@ struct rom_entry_s *convert_entries(const char *ini,
 		else if(strncmplim(line, "Status") == 0)
 		{
 			char *endptr;
-			long int status;
+			unsigned status;
 			line = strchr(line, '=') + 1;
-			status = strtol(line, &endptr, 10);
+			status = strtoul(line, &endptr, 10);
 			assert(*endptr == '\n');
 			assert(status < 6);
-			assert(status >= 0);
-			entry->conf.status = status;
+			entry->conf.status = status & 0x7;
 		}
 		else if(strncmplim(line, "Players") == 0)
 		{
 			char *endptr;
-			long int players;
+			unsigned players;
 			line = strchr(line, '=') + 1;
-			players = strtol(line, &endptr, 10);
+			players = strtoul(line, &endptr, 10);
 			assert(*endptr == '\n');
 			assert(players < 8);
-			assert(players >= 0);
-			entry->conf.players = players;
+			entry->conf.players = players & 0x7;
 		}
 		else if(strncmplim(line, "Rumble") == 0)
 		{
@@ -291,13 +289,12 @@ struct rom_entry_s *convert_entries(const char *ini,
 		else if(strncmplim(line, "CountPerOp") == 0)
 		{
 			char *endptr;
-			long int count_per_op;
+			unsigned count_per_op;
 			line = strchr(line, '=') + 1;
-			count_per_op = strtol(line, &endptr, 10);
+			count_per_op = strtoul(line, &endptr, 10);
 			assert(*endptr == '\n');
 			assert(count_per_op <= 4);
-			assert(count_per_op > 0);
-			entry->conf.count_per_op = count_per_op;
+			entry->conf.count_per_op = count_per_op & 0x7;
 		}
 		else if(strncmplim(line, "DisableExtraMem") == 0)
 		{
@@ -462,7 +459,7 @@ void dump_header(const char *filename, struct rom_entry_s *e, size_t entries)
 			fprintf(f, " ");
 		}
 
-		fprintf(f, "0x%016lX%s", e[i].crc,
+		fprintf(f, "0x%016"PRIX64"%s", e[i].crc,
 		        i == (entries - 1) ? "" : ",");
 	}
 	fprintf(f, "\n};\n\n");
@@ -472,7 +469,9 @@ void dump_header(const char *filename, struct rom_entry_s *e, size_t entries)
 	for(struct rom_entry_s *i = e; i < last; i++)
 	{
 		fprintf(f, "\t/* %s\n", i->track.goodname);
-		fprintf(f, "\t * CRC: %08lX %08lX\n", i->crc >> 32, i->crc & 0xFFFFFFFF);
+		fprintf(f, "\t * CRC: %08"PRIX32" %08"PRIX32"\n",
+				(uint32_t)(i->crc >> 32),
+				(uint32_t)(i->crc & 0xFFFFFFFF));
 		fprintf(f, "\t * Entry: %zu */\n", i - e);
 		fprintf(f, "\t{\n");
 
@@ -602,7 +601,7 @@ void dump_filtered_ini(struct rom_entry_s *all, size_t entries)
 	{
 		fprintf(f, "[%s]\n", all[i].track.md5);
 		fprintf(f, "GoodName=%s\n", all[i].track.goodname);
-		fprintf(f, "CRC=0x%016lX\n", all[i].crc);
+		fprintf(f, "CRC=0x%016"PRIX64"\n", all[i].crc);
 		if(all[i].conf.reference)
 			fprintf(f, "RefMD5=%s\n", all[i].track.refmd5);
 
