@@ -53,10 +53,10 @@ struct rom_entry_s
 			/* Unused value allows for packing entry in exactly 4
 			 * bytes. */
 			unsigned char do_not_use : 1;
-
 			unsigned char save_type : 3;
 			unsigned char players : 3;
 			unsigned char rumble : 1;
+
 			unsigned char transferpak : 1;
 			unsigned char status : 3;
 			unsigned char count_per_op : 3;
@@ -73,6 +73,10 @@ struct rom_entry_s
 			/* Only Tetris 64 requires this. If 1, then set to
 			 * 0x100, otherwise the default of 0x900 is assumed. */
 			unsigned char si_dma_duration : 1;
+
+			/* Only "Hey You, Pikachu!" uses this. If set, then
+			 * aidmamodifier should be set to 88. */
+			unsigned char ai_dma_modifier : 1;
 		};
 		struct
 		{
@@ -81,7 +85,7 @@ struct rom_entry_s
 			unsigned char reference : 1;
 			uint16_t reference_entry;
 		};
-	} conf __attribute__((packed));
+	} conf;
 
 	struct
 	{
@@ -130,29 +134,26 @@ out:
 }
 
 /**
- * Checks for number of occurrences of the word at the start of each line.
+ * Determine number of entries in ini by searching for occurrences of "\n[".
  */
-static size_t get_num_occs(const char *haystack, const char *needle)
+static size_t get_num_entries(char *haystack)
 {
-	size_t occurances = 0;
-	char *str = strdup(haystack);
-	char *token = strtok(str, "\n");
+	size_t entries = 0;
+	char *str = haystack;
 
-	do
+	while((str = strstr(str, "\n[")) != NULL)
 	{
-		if(strncmp(token, needle, strlen(needle)) == 0)
-			occurances++;
+		entries++;
+		str++;
 	}
-	while((token = strtok(NULL, "\n")) != NULL);
 
-	free(str);
-	return occurances;
+	return entries;
 }
 
 struct rom_entry_s *convert_entries(const char *ini,
                                     const size_t entries)
 {
-#define strncmplim(hay, needle) strncmp(hay, needle, strlen(needle))
+#define strncmplim(hay, needle) memcmp(hay, needle, sizeof(needle)-1)
 	struct rom_entry_s *dat = calloc(entries + 1, sizeof(struct rom_entry_s));
 	struct rom_entry_s *entry = dat;
 	int first = 1;
@@ -218,6 +219,7 @@ struct rom_entry_s *convert_entries(const char *ini,
 			entry->conf.count_per_op = 2;
 			entry->conf.disable_extra_mem = 0;
 			entry->conf.si_dma_duration = 0;
+			entry->conf.ai_dma_modifier = 0;
 		}
 		else if(strncmplim(line, "RefMD5") == 0)
 		{
@@ -330,6 +332,10 @@ struct rom_entry_s *convert_entries(const char *ini,
 			if(cheat_found)
 			{
 				entry->conf.cheat_lut = cheat_found;
+				fprintf(stderr, "DEBUG: Cheat for %s found in"
+						" entry %d\n",
+						entry->track.goodname,
+						cheat_found);
 				continue;
 			}
 
@@ -341,6 +347,8 @@ struct rom_entry_s *convert_entries(const char *ini,
 			asprintf(&cheats_used_by[cheats_tot], "\t * %s\n",
 					         entry->track.goodname);
 
+			fprintf(stderr, "DEBUG: Cheat %lld added for %s\n",
+					cheats_tot, entry->track.goodname);
 			cheats_tot++;
 		}
 		else if(strncmplim(line, "Transferpak") == 0)
@@ -364,6 +372,20 @@ struct rom_entry_s *convert_entries(const char *ini,
 			assert(*line == '1');
 			entry->conf.si_dma_duration = 1;
 		}
+		else if(strncmplim(line, "AiDmaModifier") == 0)
+		{
+			unsigned dma_mod;
+			line = strchr(line, '=') + 1;
+			dma_mod = strtoul(line, NULL, 10);
+			if(dma_mod == 88)
+				entry->conf.ai_dma_modifier = 1;
+			else
+			{
+				fprintf(stderr, "WARNING: AiDmaModifier of %ul "
+						"is not supported\n",
+						dma_mod);
+			}
+		}
 		else if(strncmplim(line, "GoodName") == 0)
 		{
 			char *endline = strchr(line, '\n');
@@ -381,9 +403,9 @@ struct rom_entry_s *convert_entries(const char *ini,
 		else if(*line != '\0')
 		{
 			char *endline = strchr(line, '\n');
-			int len = line - endline;
-			fprintf(stderr, "Unknown key %.*s\n", len, line);
-			abort();
+			int len = endline - line;
+			fprintf(stderr, "WARNING: Unknown key '%.*s'\n",
+					len, line);
 		}
 	}
 
@@ -428,6 +450,7 @@ void dump_header(const char *filename, struct rom_entry_s *e, size_t entries)
 		"\t\t\tunsigned char mempak : 1;\n"
 		"\t\t\tunsigned char biopak : 1;\n"
 		"\t\t\tunsigned char si_dma_duration : 1;\n"
+		"\t\t\tunsigned char ai_dma_modifier : 1;\n"
 		"\t\t};\n"
 		"\t\tstruct\n"
 		"\t\t{\n"
@@ -506,6 +529,7 @@ void dump_header(const char *filename, struct rom_entry_s *e, size_t entries)
 		fprintf(f, "\t\t.count_per_op = %u,\n", i->conf.count_per_op);
 		fprintf(f, "\t\t.disable_extra_mem = %u,\n", i->conf.disable_extra_mem);
 		fprintf(f, "\t\t.si_dma_duration = %u,\n", i->conf.si_dma_duration);
+		fprintf(f, "\t\t.ai_dma_modifier = %u,\n", i->conf.ai_dma_modifier);
 		fprintf(f, "\t\t.cheat_lut = %u,\n", i->conf.cheat_lut);
 		fprintf(f, "\t}%s\n", i == (last - 1) ? "" : ",");
 	}
@@ -515,7 +539,7 @@ void dump_header(const char *filename, struct rom_entry_s *e, size_t entries)
 		goto out;
 
 	fprintf(f, "const char *const cheats[%zu] = {\n", cheats_tot);
-	fprintf(f, "\tNULL,\n");
+	fprintf(f, "\t"",\n");
 	for(size_t i = 1; i < cheats_tot; i++)
 	{
 		if(cheats_used_by[i] != NULL)
@@ -651,7 +675,7 @@ int main(int argc, char *argv[])
 
 	/* Obtain number of entries; it gives an idea as to how much memory we
 	 * must allocate. */
-	entries = get_num_occs(ini, "CRC=");
+	entries = get_num_entries(ini);
 
 	printf("Processing %zu entries\n", entries);
 
