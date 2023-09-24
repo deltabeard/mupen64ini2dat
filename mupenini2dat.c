@@ -566,7 +566,7 @@ void dump_header(const char *filename, struct rom_entry_s *e, size_t entries)
 		goto out;
 
 	fprintf(f, "const char *const cheats[%zu] = {\n", cheats_tot);
-	fprintf(f, "\t"",\n");
+	fprintf(f, "\t\"\",\n");
 	for(size_t i = 1; i < cheats_tot; i++)
 	{
 		if(cheats_used_by[i] != NULL)

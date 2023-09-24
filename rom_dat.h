@@ -1,4 +1,4 @@
-/* Generated at Sun Sep 24 12:25:34 2023 using mupenini2dat */
+/* Generated at Sun Sep 24 12:32:13 2023 using mupenini2dat */
 
 #pragma once
 #include <stdint.h>
@@ -25727,7 +25727,7 @@ const struct rom_entry_s rom_dat[1804] = {
 	}
 };
 const char *const cheats[10] = {
-	,
+	"",
 
 	/**
 	 * Zelda no Densetsu - Toki no Ocarina - Zelda Collection Version 
