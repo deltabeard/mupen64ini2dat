@@ -159,8 +159,7 @@ struct rom_entry_s *convert_entries(const char *ini,
 	int first = 1;
 	const char *line = ini;
 
-	if(dat == NULL)
-		goto out;
+	assert(dat != NULL);
 
 	while((line = strchr(line, '\n')) != NULL)
 	{
@@ -185,7 +184,7 @@ struct rom_entry_s *convert_entries(const char *ini,
 			}
 
 			line++;
-			strncpy(entry->track.md5, line, 32);
+			memcpy(entry->track.md5, line, 32);
 			entry->track.md5[32] = '\0';
 		}
 		else if(strncmplim(line, "CRC") == 0)
@@ -225,14 +224,17 @@ struct rom_entry_s *convert_entries(const char *ini,
 		{
 			line = strchr(line, '=') + 1;
 			entry->conf.reference = 1;
-			strncpy(entry->track.refmd5, line, 32);
+			memcpy(entry->track.refmd5, line, 32);
 			entry->track.refmd5[32] = '\0';
 
 			/* TODO: Find reference. */
 		}
 		else if(strncmplim(line, "SaveType") == 0)
 		{
-			line = strchr(line, '=') + 1;
+			line = strchr(line, '=');
+			assert(line != NULL);
+			line++;
+
 			switch(*line)
 			{
 			case 'E':
@@ -267,7 +269,10 @@ struct rom_entry_s *convert_entries(const char *ini,
 		{
 			char *endptr;
 			unsigned status;
-			line = strchr(line, '=') + 1;
+			line = strchr(line, '=');
+			assert(line != NULL);
+			line++;
+
 			status = strtoul(line, &endptr, 10);
 			assert(*endptr == '\n');
 			assert(status < 6);
@@ -277,7 +282,10 @@ struct rom_entry_s *convert_entries(const char *ini,
 		{
 			char *endptr;
 			unsigned players;
-			line = strchr(line, '=') + 1;
+			line = strchr(line, '=');
+			assert(line != NULL);
+			line++;
+
 			players = strtoul(line, &endptr, 10);
 			assert(*endptr == '\n');
 			assert(players < 8);
@@ -285,14 +293,19 @@ struct rom_entry_s *convert_entries(const char *ini,
 		}
 		else if(strncmplim(line, "Rumble") == 0)
 		{
-			line = strchr(line, '=') + 1;
+			line = strchr(line, '=');
+			assert(line != NULL);
+			line++;
 			entry->conf.rumble = (*line == 'Y');
 		}
 		else if(strncmplim(line, "CountPerOp") == 0)
 		{
 			char *endptr;
 			unsigned count_per_op;
-			line = strchr(line, '=') + 1;
+			line = strchr(line, '=');
+			assert(line != NULL);
+			line++;
+
 			count_per_op = strtoul(line, &endptr, 10);
 			assert(*endptr == '\n');
 			assert(count_per_op <= 4);
@@ -300,7 +313,9 @@ struct rom_entry_s *convert_entries(const char *ini,
 		}
 		else if(strncmplim(line, "DisableExtraMem") == 0)
 		{
-			line = strchr(line, '=') + 1;
+			line = strchr(line, '=');
+			assert(line != NULL);
+			line++;
 			entry->conf.count_per_op = (*line == '1');
 		}
 		else if(strncmplim(line, "Cheat0") == 0)
@@ -308,14 +323,16 @@ struct rom_entry_s *convert_entries(const char *ini,
 			uint8_t cheat_found = 0;
 			char *endline = strchr(line, '\n');
 			size_t len;
-			line = strchr(line, '=') + 1;
+			line = strchr(line, '=');
+			assert(line != NULL);
+			line++;
 
 			len = endline - line;
 			len++; /* For null char. */
 
 			for(size_t ci = 1; ci < cheats_tot; ci++)
 			{
-				if(strncmp(cheats[ci], line, len - 1) == 0)
+				if(memcmp(cheats[ci], line, len - 1) == 0)
 				{
 					char *tmp;
 					asprintf(&tmp, "%s\t * %s\n",
@@ -341,7 +358,7 @@ struct rom_entry_s *convert_entries(const char *ini,
 
 			cheats[cheats_tot] = malloc(len);
 			assert(cheats[cheats_tot] != NULL);
-			strncpy(cheats[cheats_tot], line, len);
+			memcpy(cheats[cheats_tot], line, len);
 			cheats[cheats_tot][len - 1] = '\0';
 			entry->conf.cheat_lut = cheats_tot;
 			asprintf(&cheats_used_by[cheats_tot], "\t * %s\n",
@@ -353,29 +370,39 @@ struct rom_entry_s *convert_entries(const char *ini,
 		}
 		else if(strncmplim(line, "Transferpak") == 0)
 		{
-			line = strchr(line, '=') + 1;
+			line = strchr(line, '=');
+			assert(line != NULL);
+			line++;
 			entry->conf.transferpak = (*line == 'Y');
 		}
 		else if(strncmplim(line, "Mempak") == 0)
 		{
-			line = strchr(line, '=') + 1;
+			line = strchr(line, '=');
+			assert(line != NULL);
+			line++;
 			entry->conf.biopak = (*line == 'Y');
 		}
 		else if(strncmplim(line, "Biopak") == 0)
 		{
-			line = strchr(line, '=') + 1;
+			line = strchr(line, '=');
+			assert(line != NULL);
+			line++;
 			entry->conf.biopak = (*line == 'Y');
 		}
 		else if(strncmplim(line, "SiDmaDuration") == 0)
 		{
-			line = strchr(line, '=') + 1;
+			line = strchr(line, '=');
+			assert(line != NULL);
+			line++;
 			assert(*line == '1');
 			entry->conf.si_dma_duration = 1;
 		}
 		else if(strncmplim(line, "AiDmaModifier") == 0)
 		{
 			unsigned dma_mod;
-			line = strchr(line, '=') + 1;
+			line = strchr(line, '=');
+			assert(line != NULL);
+			line++;
 			dma_mod = strtoul(line, NULL, 10);
 			if(dma_mod == 88)
 				entry->conf.ai_dma_modifier = 1;
@@ -390,14 +417,16 @@ struct rom_entry_s *convert_entries(const char *ini,
 		{
 			char *endline = strchr(line, '\n');
 			size_t len;
-			line = strchr(line, '=') + 1;
+			line = strchr(line, '=');
+			assert(line != NULL);
+			line++;
 
 			len = endline - line;
 			if(len >= 64)
 				len = 63;
 
 			assert(entry->track.goodname != NULL);
-			strncpy(entry->track.goodname, line, len);
+			memcpy(entry->track.goodname, line, len);
 			entry->track.goodname[len] = '\0';
 		}
 		else if(*line != '\0')
@@ -410,8 +439,6 @@ struct rom_entry_s *convert_entries(const char *ini,
 	}
 
 	/* All entries begin with a CRC value. */
-
-out:
 	return dat;
 }
 
@@ -575,8 +602,9 @@ void remove_dupes(struct rom_entry_s *first, size_t *entries)
 {
 	struct rom_entry_s *r = calloc(*entries, sizeof(struct rom_entry_s));
 	struct rom_entry_s *r_i = r;
-
 	struct rom_entry_s *last = first + *entries;
+
+	assert(r != NULL);
 
 	for(struct rom_entry_s *e = first; e < last; e++)
 	{
@@ -621,6 +649,8 @@ void dump_filtered_ini(struct rom_entry_s *all, size_t entries)
 {
 	FILE *f = fopen("fil.ini", "w");
 
+	assert(f != NULL);
+
 	for(size_t i = 0; i < entries; i++)
 	{
 		fprintf(f, "[%s]\n", all[i].track.md5);
@@ -646,7 +676,7 @@ void resolve_deps(struct rom_entry_s *all, size_t entries)
 
 		for(i = 0; i < entries; i++)
 		{
-			if(strncmp(e->track.refmd5, all[i].track.md5, 32) == 0)
+			if(memcmp(e->track.refmd5, all[i].track.md5, 32) == 0)
 				break;
 		}
 
@@ -678,8 +708,8 @@ int main(int argc, char *argv[])
 	entries = get_num_entries(ini);
 
 	printf("Processing %zu entries\n", entries);
-
 	all = convert_entries(ini, entries);
+
 	qsort(all, entries, sizeof(*all), compare_entry);
 	resolve_deps(all, entries);
 	remove_dupes(all, &entries);
